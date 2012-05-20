@@ -118,6 +118,8 @@ void CinderVideoStreamServerApp::shutdown(){
 //        mServerThreadRef->interrupt();
 //        mServerThreadRef->join();
 //    }
+    
+    if (queueToServer) delete queueToServer;
 }
 
 void CinderVideoStreamServerApp::keyDown( KeyEvent event )

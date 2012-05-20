@@ -110,6 +110,7 @@ void CinderVideoStreamClientApp::shutdown(){
 //        mClientThreadRef->interrupt();
 //        mClientThreadRef->join();
 //    }
+    if (queueFromServer) delete queueFromServer;
 }
 void CinderVideoStreamClientApp::update()
 {
