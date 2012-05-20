@@ -38,8 +38,8 @@
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CinderVideoStreamClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderVideoStreamClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2175EE156872FB00D11CA3 /* CinderVideoStreamClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderVideoStreamClient.h; sourceTree = "<group>"; };
 		AF2175F81568783B00D11CA3 /* ConcurrentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConcurrentQueue.h; path = ../src/ConcurrentQueue.h; sourceTree = "<group>"; };
+		AFAC018515695CE900C95B3B /* CinderVideoStreamClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderVideoStreamClient.h; path = ../src/CinderVideoStreamClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AFAC018515695CE900C95B3B /* CinderVideoStreamClient.h */,
 				00BAE6590E7ED9C10018A608 /* CinderVideoStreamClientApp.cpp */,
-				AF2175EE156872FB00D11CA3 /* CinderVideoStreamClient.h */,
 				AF2175F81568783B00D11CA3 /* ConcurrentQueue.h */,
 			);
 			name = Source;
