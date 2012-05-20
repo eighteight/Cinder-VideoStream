@@ -37,9 +37,6 @@ class CinderVideoStreamServer{
     CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, unsigned int width, unsigned int height)
                                 :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer),
                                 width(width), height(height){}
-    void setQueue(ph::ConcurrentQueue<uint8_t*>* queueToServer){
-        mQueue = queueToServer;
-    }
     void run(){
 
         unsigned char* data;
