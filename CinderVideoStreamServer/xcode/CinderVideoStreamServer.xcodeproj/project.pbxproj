@@ -32,14 +32,14 @@
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* CinderVideoStreamServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; path = CinderVideoStreamServer_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* CinderVideoStreamServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderVideoStreamServer_Prefix.pch; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* CaptureTCPServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureTCPServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2175EE156872FB00D11CA3 /* CinderVideoStreamServer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = CinderVideoStreamServer.h; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* CaptureTCPServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CaptureTCPServer.app; path = CinderVideoStreamServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2175F81568783B00D11CA3 /* ConcurrentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConcurrentQueue.h; path = ../src/ConcurrentQueue.h; sourceTree = "<group>"; };
+		AFAC018F15695DF700C95B3B /* CinderVideoStreamServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CinderVideoStreamServer.h; path = ../src/CinderVideoStreamServer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AFAC018F15695DF700C95B3B /* CinderVideoStreamServer.h */,
 				00BAE6590E7ED9C10018A608 /* CinderVideoStreamServerApp.cpp */,
-				AF2175EE156872FB00D11CA3 /* CinderVideoStreamServer.h */,
 				AF2175F81568783B00D11CA3 /* ConcurrentQueue.h */,
 			);
 			name = Source;
