@@ -92,7 +92,7 @@ void CinderVideoStreamClientApp::setup()
 
     mClientThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
     
-    mStreamSurface = Surface8u(WIDTH, HEIGHT, 960, SurfaceChannelOrder::RGB);
+    mStreamSurface = Surface8u(WIDTH, HEIGHT, WIDTH*3, SurfaceChannelOrder::RGB);
 }
 
 void CinderVideoStreamClientApp::keyDown( KeyEvent event )

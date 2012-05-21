@@ -45,7 +45,7 @@ class CinderVideoStreamClient{
         mStatus = status;
         mHeight = height;
         mWidth = width;
-        mDataSize = height*width;
+        mDataSize = height*width*3;
         mData = new unsigned char[mDataSize];
     }
     void run(){
