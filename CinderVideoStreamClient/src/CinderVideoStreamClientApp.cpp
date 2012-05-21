@@ -27,13 +27,10 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
-#include "cinder/Capture.h"
-#include "cinder/Text.h"
 #include "ConcurrentQueue.h"
 #include "CinderVideoStreamClient.h"
 #include <boost/asio.hpp>
 #include <boost/bind.hpp>
-#include <boost/lexical_cast.hpp>
 
 using namespace ci;
 using namespace ci::app;
@@ -56,7 +53,6 @@ class CinderVideoStreamClientApp : public AppBasic {
 
     void threadLoop();
 
-    int cnt;
     std::shared_ptr<std::thread> mClientThreadRef;
 
     uint8_t * mData;
