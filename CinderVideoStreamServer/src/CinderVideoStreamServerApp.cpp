@@ -107,9 +107,10 @@ void CinderVideoStreamServerApp::setup()
 			console() << "Unable to initialize device: " << device->getName() << endl;
 		}
 	}
-    running = true;
+
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
     mServerThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
+    if (!running) running = true;
 }
 
 void CinderVideoStreamServerApp::shutdown(){
@@ -145,6 +146,7 @@ void CinderVideoStreamServerApp::keyDown( KeyEvent event )
 
 void CinderVideoStreamServerApp::update()
 {
+
 	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {
 		if( cIt->checkNewFrame() ) {
 			Surface8u surf = cIt->getSurface();
@@ -183,7 +185,7 @@ void CinderVideoStreamServerApp::draw()
 	}
     
     gl::color( Color::black() );	
-    gl::drawString(mStatus, Vec2f(10, getWindowHeight() - 10) );
+    //gl::drawString(mStatus, Vec2f(10, getWindowHeight() - 10) );
 }
 
 

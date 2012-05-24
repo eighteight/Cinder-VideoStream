@@ -35,18 +35,24 @@ class CinderVideoStreamServer{
     public:
 
     CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, unsigned int width, unsigned int height)
-                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer),
-                                width(width), height(height){}
+                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(width*height*3){
+                                    boost::asio::socket_base::reuse_address option(true);
+                                    mAcceptor.set_option(option);
+                                    boost::asio::socket_base::debug option1(true);
+                                    mAcceptor.set_option(option1);
+                                }
     void run(){
 
         unsigned char* data;
-        
-        while(mQueue->try_pop(data)){
-            const mutable_buffer image_buffer(data, width*height*3);
-            mAcceptor.accept(mSocket);
-            boost::system::error_code ignored_error;
-            boost::asio::write(mSocket, buffer(image_buffer),
-                               transfer_all(), ignored_error);
+        boost::system::error_code ignored_error;
+
+        while(true){
+            if (mQueue->try_pop(data)){
+                const mutable_buffer image_buffer(data, dSize);
+                mAcceptor.accept(mSocket);
+                boost::asio::write(mSocket, buffer(image_buffer), transfer_all(), ignored_error);
+                mSocket.close();
+            }
         }
     }
 private:
@@ -54,8 +60,8 @@ private:
     ip::tcp::socket mSocket;
     ip::tcp::acceptor mAcceptor;
     ph::ConcurrentQueue<uint8_t*>* mQueue;
-    unsigned int width, height;
-    
+    std::size_t dSize;
+
 };
 
 #endif
