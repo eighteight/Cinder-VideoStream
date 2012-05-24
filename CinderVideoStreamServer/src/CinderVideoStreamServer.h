@@ -38,8 +38,6 @@ class CinderVideoStreamServer{
                                 :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(width*height*3){
                                     boost::asio::socket_base::reuse_address option(true);
                                     mAcceptor.set_option(option);
-                                    boost::asio::socket_base::debug option1(true);
-                                    mAcceptor.set_option(option1);
                                 }
     void run(){
 
