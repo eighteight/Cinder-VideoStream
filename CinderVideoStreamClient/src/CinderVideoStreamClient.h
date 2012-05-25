@@ -40,7 +40,7 @@ class CinderVideoStreamClient{
     ~CinderVideoStreamClient(){
         if (mData) delete [] mData;
     }
-    void setup(ph::ConcurrentQueue<unsigned char*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
+    void setup(ph::ConcurrentQueue<uint8_t*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
         mQueue = queueToServer;
         mStatus = status;
         mDataSize = height*width*3*sizeof(uint8_t);
@@ -50,11 +50,11 @@ class CinderVideoStreamClient{
         tcp::resolver resolver(mIOService);
         boost::array<uint8_t, 65536> temp_buffer;
         size_t len, iSize;
+        tcp::resolver::query query(tcp::v4(), mHost, mService);
         while(true){
-            //std::cout<<mQueue->size()<<std::endl;
             try
             {
-                tcp::resolver::query query(tcp::v4(), mHost, mService);
+
                 tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
                 tcp::resolver::iterator end;
                 
@@ -73,8 +73,8 @@ class CinderVideoStreamClient{
                 for (;;)
                 {
                     len = socket.read_some(boost::asio::buffer(temp_buffer), error);
-                    
-                   // memmove(mData+iSize*3, &temp_buffer[0], temp_buffer.size());
+
+                    //memcpy(mData, &temp_buffer[0], temp_buffer.size());
                     //copy( temp_buffer.begin(), temp_buffer.begin(), mData);
                     for(int i = 0; i < len; i++) {
                         mData[i+iSize] = temp_buffer[i];
@@ -98,13 +98,12 @@ class CinderVideoStreamClient{
     }
 private:
     boost::asio::io_service mIOService;
-    ph::ConcurrentQueue<unsigned char*>* mQueue;
+    ph::ConcurrentQueue<uint8_t*>* mQueue;
     std::string mService;
     std::string mHost;
     std::string* mStatus;
     std::size_t mDataSize;
     uint8_t* mData;
-    
 };
 
 #endif
