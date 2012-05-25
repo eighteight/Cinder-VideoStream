@@ -43,10 +43,8 @@ class CinderVideoStreamClient{
     void setup(ph::ConcurrentQueue<unsigned char*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
         mQueue = queueToServer;
         mStatus = status;
-        mHeight = height;
-        mWidth = width;
         mDataSize = height*width*3;
-        mData = new unsigned char[mDataSize];
+        mData = new uint8_t[mDataSize];
     }
     void run(){
         tcp::resolver resolver(mIOService);
@@ -106,9 +104,8 @@ private:
     std::string mService;
     std::string mHost;
     std::string* mStatus;
-    unsigned int mHeight, mWidth;
-    unsigned long mDataSize;
-    unsigned char* mData;
+    std::size_t mDataSize;
+    uint8_t* mData;
     
 };
 

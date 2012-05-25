@@ -36,7 +36,7 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-static const int WIDTH = 320, HEIGHT = 240;
+static const int WIDTH = 1280, HEIGHT = 720;
 
 class CinderVideoStreamClientApp : public AppBasic {
  public:
@@ -93,6 +93,7 @@ void CinderVideoStreamClientApp::setup()
     mClientThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
     
     mStreamSurface = Surface8u(WIDTH, HEIGHT, WIDTH*3, SurfaceChannelOrder::RGB);
+    mStatus.assign("Starting");
 }
 
 void CinderVideoStreamClientApp::keyDown( KeyEvent event )

@@ -39,8 +39,7 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-static const int WIDTH = 320, HEIGHT = 240;
-
+static const int WIDTH = 1280, HEIGHT = 720;
 class CinderVideoStreamServerApp : public AppBasic {
  public:	
 	void setup();
@@ -185,7 +184,7 @@ void CinderVideoStreamServerApp::draw()
 	}
     
     gl::color( Color::black() );	
-    //gl::drawString(mStatus, Vec2f(10, getWindowHeight() - 10) );
+    gl::drawString(mStatus, Vec2f(10, getWindowHeight() - 10) );
 }
 
 
