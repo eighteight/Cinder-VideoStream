@@ -46,7 +46,7 @@ class CinderVideoStreamClient{
         mQueue = queueToServer;
         mStatus = status;
         mDataSize = height*width*3*sizeof(T);
-        mData = new uint8_t[mDataSize];
+        mData = new T[mDataSize];
     }
     void run(){
         tcp::resolver resolver(mIOService);
