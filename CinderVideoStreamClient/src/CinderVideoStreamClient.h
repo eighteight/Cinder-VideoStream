@@ -40,11 +40,11 @@ class CinderVideoStreamClient{
     ~CinderVideoStreamClient(){
         if (mData) delete [] mData;
     }
-    void setup(ph::ConcurrentQueue<unsigned char*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
+    void setup(ph::ConcurrentQueue<uint16_t*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
         mQueue = queueToServer;
         mStatus = status;
-        mDataSize = height*width*3;
-        mData = new uint8_t[mDataSize];
+        mDataSize = height*width*sizeof(uint16_t);
+        mData = new uint16_t[mDataSize];
     }
     void run(){
         tcp::resolver resolver(mIOService);
@@ -73,14 +73,14 @@ class CinderVideoStreamClient{
                 iSize = 0;
                 for (;;)
                 {
-                    len = socket.read_some(boost::asio::buffer(temp_buffer), error);
-                    temp_buffer.data();
+                    len = boost::asio::read(socket, boost::asio::buffer(temp_buffer, 65536), boost::asio::transfer_all(), error);
+                    //len = socket.read_some(boost::asio::buffer(temp_buffer), error);
                     
-                   // memmove(mData+iSize*3, &temp_buffer[0], temp_buffer.size());
+                    memcpy(mData, &temp_buffer[0], temp_buffer.size());
                     //copy( temp_buffer.begin(), temp_buffer.begin(), mData);
-                    for(int i = 0; i < len; i++) {
-                        mData[i+iSize] = temp_buffer[i];
-                    }
+//                    for(int i = 0; i < len; i++) {
+//                        mData[i+iSize] = temp_buffer[i];
+//                    }
 
                     iSize += len;
                     
@@ -100,12 +100,12 @@ class CinderVideoStreamClient{
     }
 private:
     boost::asio::io_service mIOService;
-    ph::ConcurrentQueue<unsigned char*>* mQueue;
+    ph::ConcurrentQueue<uint16_t*>* mQueue;
     std::string mService;
     std::string mHost;
     std::string* mStatus;
     std::size_t mDataSize;
-    uint8_t* mData;
+    uint16_t* mData;
     
 };
 
