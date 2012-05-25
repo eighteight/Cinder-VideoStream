@@ -43,14 +43,13 @@ class CinderVideoStreamClient{
     void setup(ph::ConcurrentQueue<unsigned char*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
         mQueue = queueToServer;
         mStatus = status;
-        mDataSize = height*width*3;
+        mDataSize = height*width*3*sizeof(uint8_t);
         mData = new uint8_t[mDataSize];
     }
     void run(){
         tcp::resolver resolver(mIOService);
         boost::array<uint8_t, 65536> temp_buffer;
-        size_t len;
-        unsigned long iSize;
+        size_t len, iSize;
         while(true){
             //std::cout<<mQueue->size()<<std::endl;
             try
@@ -74,7 +73,6 @@ class CinderVideoStreamClient{
                 for (;;)
                 {
                     len = socket.read_some(boost::asio::buffer(temp_buffer), error);
-                    temp_buffer.data();
                     
                    // memmove(mData+iSize*3, &temp_buffer[0], temp_buffer.size());
                     //copy( temp_buffer.begin(), temp_buffer.begin(), mData);
