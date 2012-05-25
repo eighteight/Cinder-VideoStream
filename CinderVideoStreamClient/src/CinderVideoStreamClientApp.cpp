@@ -38,6 +38,8 @@ using namespace std;
 
 static const int WIDTH = 1280, HEIGHT = 720;
 
+typedef CinderVideoStreamClient<uint8_t> CinderVideoStreamClientUint8;
+
 class CinderVideoStreamClientApp : public AppBasic {
  public:
     void prepareSettings( Settings *settings );
@@ -68,7 +70,7 @@ void CinderVideoStreamClientApp::threadLoop()
 {
     while (true) {
         try {
-            boost::shared_ptr<CinderVideoStreamClient> s = boost::shared_ptr<CinderVideoStreamClient>(new CinderVideoStreamClient("localhost","3333"));
+            boost::shared_ptr<CinderVideoStreamClientUint8> s = boost::shared_ptr<CinderVideoStreamClientUint8>(new CinderVideoStreamClientUint8("localhost","3333"));
             s.get()->setup(queueFromServer, mClientStatus, WIDTH, HEIGHT);
             s.get()->run();
         }

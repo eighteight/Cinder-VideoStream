@@ -39,6 +39,8 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
+typedef CinderVideoStreamServer<uint8_t> CinderVideoStreamServerUint8;
+
 static const int WIDTH = 1280, HEIGHT = 720;
 class CinderVideoStreamServerApp : public AppBasic {
  public:	
@@ -66,7 +68,7 @@ void CinderVideoStreamServerApp::threadLoop()
 {
     while (running) {
         try {
-            boost::shared_ptr<CinderVideoStreamServer> server = boost::shared_ptr<CinderVideoStreamServer>(new CinderVideoStreamServer(3333,queueToServer, WIDTH, HEIGHT));
+            boost::shared_ptr<CinderVideoStreamServerUint8> server = boost::shared_ptr<CinderVideoStreamServerUint8>(new CinderVideoStreamServerUint8(3333,queueToServer, WIDTH, HEIGHT));
             server.get()->run();
         }
         catch (std::exception& e) {

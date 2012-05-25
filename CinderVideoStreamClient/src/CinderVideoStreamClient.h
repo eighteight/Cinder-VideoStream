@@ -31,6 +31,8 @@
 #include <boost/lexical_cast.hpp>
 
 using namespace boost::asio::ip;
+
+template <class T>
 class CinderVideoStreamClient{
     public:
 
@@ -40,15 +42,15 @@ class CinderVideoStreamClient{
     ~CinderVideoStreamClient(){
         if (mData) delete [] mData;
     }
-    void setup(ph::ConcurrentQueue<uint8_t*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
+    void setup(ph::ConcurrentQueue<T*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
         mQueue = queueToServer;
         mStatus = status;
-        mDataSize = height*width*3*sizeof(uint8_t);
+        mDataSize = height*width*3*sizeof(T);
         mData = new uint8_t[mDataSize];
     }
     void run(){
         tcp::resolver resolver(mIOService);
-        boost::array<uint8_t, 65536> temp_buffer;
+        boost::array<T, 65536> temp_buffer;
         size_t len, iSize;
         tcp::resolver::query query(tcp::v4(), mHost, mService);
         while(true){
@@ -98,12 +100,12 @@ class CinderVideoStreamClient{
     }
 private:
     boost::asio::io_service mIOService;
-    ph::ConcurrentQueue<uint8_t*>* mQueue;
+    ph::ConcurrentQueue<T*>* mQueue;
     std::string mService;
     std::string mHost;
     std::string* mStatus;
     std::size_t mDataSize;
-    uint8_t* mData;
+    T* mData;
 };
 
 #endif

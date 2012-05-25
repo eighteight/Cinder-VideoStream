@@ -31,17 +31,18 @@
 
 
 using namespace boost::asio;
+template <class T>
 class CinderVideoStreamServer{
     public:
 
     CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, unsigned int width, unsigned int height)
-                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(width*height*3){
+                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(width*height*3*sizeof(T)){
                                     boost::asio::socket_base::reuse_address option(true);
                                     mAcceptor.set_option(option);
                                 }
     void run(){
 
-        unsigned char* data;
+        T* data;
         boost::system::error_code ignored_error;
 
         while(true){
@@ -57,7 +58,7 @@ private:
     io_service mIOService;
     ip::tcp::socket mSocket;
     ip::tcp::acceptor mAcceptor;
-    ph::ConcurrentQueue<uint8_t*>* mQueue;
+    ph::ConcurrentQueue<T*>* mQueue;
     std::size_t dSize;
 
 };
