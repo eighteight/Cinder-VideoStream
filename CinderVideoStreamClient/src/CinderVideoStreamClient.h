@@ -42,10 +42,10 @@ class CinderVideoStreamClient{
     ~CinderVideoStreamClient(){
         if (mData) delete [] mData;
     }
-    void setup(ph::ConcurrentQueue<T*>* queueToServer, std::string* status, unsigned int width, unsigned int height){
+    void setup(ph::ConcurrentQueue<T*>* queueToServer, std::string* status, std::size_t dataSize){
         mQueue = queueToServer;
         mStatus = status;
-        mDataSize = height*width*3*sizeof(T);
+        mDataSize = dataSize;
         mData = new T[mDataSize];
     }
     void run(){
@@ -56,7 +56,6 @@ class CinderVideoStreamClient{
         while(true){
             try
             {
-
                 tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
                 tcp::resolver::iterator end;
                 
@@ -74,7 +73,7 @@ class CinderVideoStreamClient{
                 iSize = 0;
                 for (;;)
                 {
-                    len = socket.read_some(boost::asio::buffer(temp_buffer), error);
+                    len = socket.read_some(boost::asio::buffer(temp_buffer), error)/sizeof(T);
 
                     //memcpy(mData, &temp_buffer[0], temp_buffer.size());
                     //copy( temp_buffer.begin(), temp_buffer.begin(), mData);

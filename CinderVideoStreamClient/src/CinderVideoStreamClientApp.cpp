@@ -71,7 +71,7 @@ void CinderVideoStreamClientApp::threadLoop()
     while (true) {
         try {
             boost::shared_ptr<CinderVideoStreamClientUint8> s = boost::shared_ptr<CinderVideoStreamClientUint8>(new CinderVideoStreamClientUint8("localhost","3333"));
-            s.get()->setup(queueFromServer, mClientStatus, WIDTH, HEIGHT);
+            s.get()->setup(queueFromServer, mClientStatus, WIDTH*HEIGHT*3);  //3 - for RGB mode
             s.get()->run();
         }
         catch (std::exception& e) {
