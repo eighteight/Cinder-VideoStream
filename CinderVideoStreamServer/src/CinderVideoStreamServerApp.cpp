@@ -110,7 +110,7 @@ void CinderVideoStreamServerApp::setup()
 	}
 
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
-    mServerThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
+    mServerThreadRef = std::shared_ptr<std::thread>(new std::thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
     if (!running) running = true;
 }
 

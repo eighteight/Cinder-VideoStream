@@ -1,6 +1,3 @@
-#ifndef CaptureTCPServer_ConcurrentQueue_h
-#define CaptureTCPServer_ConcurrentQueue_h
-
 /*
  Copyright (C) 2010-2012 Paul Houx
  
@@ -30,6 +27,7 @@
 
 #include "cinder/Thread.h"
 #include <queue>
+#include <boost/thread/mutex.hpp>
 
 namespace ph {
     
@@ -42,7 +40,7 @@ namespace ph {
         
         void push(Data const& data)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            boost::mutex::scoped_lock lock(mMutex);
             mQueue.push(data);
             lock.unlock();
             mCondition.notify_one();
@@ -50,13 +48,13 @@ namespace ph {
         
         bool empty() const
         {
-            std::mutex::scoped_lock lock(mMutex);
+            boost::mutex::scoped_lock lock(mMutex);
             return mQueue.empty();
         }
         
         bool try_pop(Data& popped_value)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            boost::mutex::scoped_lock lock(mMutex);
             if(mQueue.empty())
             {
                 return false;
@@ -69,7 +67,7 @@ namespace ph {
         
         void wait_and_pop(Data& popped_value)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            boost::mutex::scoped_lock lock(mMutex);
             while(mQueue.empty())
             {
                 mCondition.wait(lock);
@@ -81,11 +79,9 @@ namespace ph {
         std::size_t size() const { return mQueue.size(); }
     private:
         std::queue<Data>		mQueue;
-        mutable std::mutex		mMutex;
+        mutable boost::mutex	mMutex;
         std::condition_variable	mCondition;
     };
     
 } // namespace ph
 
-
-#endif
