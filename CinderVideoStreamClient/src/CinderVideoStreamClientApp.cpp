@@ -92,7 +92,7 @@ void CinderVideoStreamClientApp::setup()
     mClientStatus = new std::string();
     queueFromServer = new ph::ConcurrentQueue<uint8_t*>();
 
-    mClientThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
+    mClientThreadRef = std::shared_ptr<std::thread>(new std::thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
     
     mStreamSurface = Surface8u(WIDTH, HEIGHT, WIDTH*3, SurfaceChannelOrder::RGB);
     mStatus.assign("Starting");
