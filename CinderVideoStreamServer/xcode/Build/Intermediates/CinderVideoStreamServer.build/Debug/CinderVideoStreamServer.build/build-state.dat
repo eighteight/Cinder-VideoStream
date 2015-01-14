@@ -519,9 +519,9 @@ t1348079173
 s2498
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp
-c0000000054B6F62D0000000000001929
-t1421276717
-s6441
+c0000000054B6FC8E0000000000001BED
+t1421278350
+s7149
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/ConcurrentQueue.h
 c0000000054B6F65A0000000000000A9A
@@ -534,15 +534,15 @@ t1421270594
 s213
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o
-t1421276768
-s3125172
+t1421278355
+s3257440
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch.pch
 t1421270594
 s123768
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-t1421276774
+t1421278361
 s102
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/Info.plist
@@ -550,8 +550,8 @@ t1421270594
 s1245
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer
-t1421276774
-s18324568
+t1421278361
+s18354688
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/PkgInfo
 t1421270594
@@ -7517,11 +7517,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa1a349492e67ba41^4b8f4a492e67ba41^---0#1#1#--18"Check dependencies36"984608A6-4D42-4AFA-AE3B-95DFACD7EE1F-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc9ac4e1c3467ba41^f9d64f1c3467ba41^---0#1#1#--18"Check dependencies36"1628CC83-DCC4-4EB5-B9DD-72CA4D5263AF-
 
 CCompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s442969562.810530
-e442969568.087973
+s442971150.627215
+e442971156.010066
 r1
 xCompileC
 xBuild/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o
@@ -8920,12 +8920,12 @@ d/Users/vgusev/repos/Cinder/boost/boost/predef/os/bsd/net.h
 d/Users/vgusev/repos/Cinder/boost/boost/math/special_functions/fpclassify.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/tools/real_cast.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/container/container_fwd.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd1b1cfda2d67ba41^ec8516e02d67ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o36"BAB4E68F-8294-4375-9D67-DC19150C540D-
-bDD27EC03-6B31-43F5-B0F5-B654620294DA
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler64aea00e3467ba41^369402143467ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o36"2AB9AEDF-F9D7-4D34-AE50-54B582DF7F49-
+b75A4C983-9EF4-45E7-898F-84257F86A857
 
 CLd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64
-s442969568.102402
-e442969574.156842
+s442971156.023610
+e442971161.240252
 r1
 xLd
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer
@@ -9021,8 +9021,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer104"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_649d461ae02d67ba41^072928e62d67ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework CoreMedia -framework Cocoa -framework OpenGL -framework Accelerate -framework AVFoundation -framework Carbon -framework CoreAudio -framework CoreVideo -framework QTKit -framework AudioToolbox -framework AudioUnit -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer36"70BBB8EA-6C05-4AB9-B9C9-EE5C746A8112-
-bDD27EC03-6B31-43F5-B0F5-B654620294DA
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer104"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_641d1e06143467ba41^f1813d193467ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework CoreMedia -framework Cocoa -framework OpenGL -framework Accelerate -framework AVFoundation -framework Carbon -framework CoreAudio -framework CoreVideo -framework QTKit -framework AudioToolbox -framework AudioUnit -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer36"B689A11C-2A62-46BD-941F-93ABD35407F0-
+b75A4C983-9EF4-45E7-898F-84257F86A857
 
 CProcessInfoPlistFile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/Info.plist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Info.plist
 s442963394.369531
@@ -9053,11 +9053,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precomp
 b24BB8198-2005-4EB5-9165-F805830CFB09
 
 CTouch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-s442969574.165715
-e442969574.171071
+s442971161.249065
+e442971161.255347
 r1
 xTouch
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app54"Touch Build/Products/Debug/CinderVideoStreamServer.app60772ae62d67ba41^08cc2be62d67ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamServer.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app36"D88F940D-EFE3-44A1-A88A-58F7BC2597D6-
-bDD27EC03-6B31-43F5-B0F5-B654620294DA
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app54"Touch Build/Products/Debug/CinderVideoStreamServer.app85ce3f193467ba41^d05e41193467ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamServer.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app36"5C67489B-44CA-420E-AB22-6B823B0D6926-
+b75A4C983-9EF4-45E7-898F-84257F86A857
 

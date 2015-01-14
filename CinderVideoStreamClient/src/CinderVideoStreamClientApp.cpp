@@ -89,7 +89,7 @@ void CinderVideoStreamClientApp::prepareSettings( Settings *settings )
 
 void CinderVideoStreamClientApp::setup()
 {	
-    setFrameRate(30);
+    //setFrameRate(30);
     mClientStatus = new std::string();
     queueFromServer = new ph::ConcurrentQueue<uint8_t*>();
     mClientThreadRef = std::shared_ptr<std::thread>(new thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));

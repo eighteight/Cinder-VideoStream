@@ -36,6 +36,8 @@
 #include <boost/bind.hpp>
 #include <boost/lexical_cast.hpp>
 
+#define USE_JPEG_COMPRESSION
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -75,14 +77,13 @@ void CinderVideoStreamServerApp::threadLoop()
         catch (std::exception& e) {
             std::cerr << "Exception: " << e.what() << "\n";
         }
-        //boost::this_thread::sleep(boost::posix_time::milliseconds(1));
     }
 }
 
 void CinderVideoStreamServerApp::setup()
 {
 	// list out the devices
-    setFrameRate(30);
+    //setFrameRate(30);
 	vector<Capture::DeviceRef> devices( Capture::getDevices() );
 	for( vector<Capture::DeviceRef>::const_iterator deviceIt = devices.begin(); deviceIt != devices.end(); ++deviceIt ) {
 		Capture::DeviceRef device = *deviceIt;
@@ -148,8 +149,27 @@ void CinderVideoStreamServerApp::update()
 	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {
 		if( cIt->checkNewFrame() ) {
 			Surface8uRef surf = cIt->getSurface();
+#ifdef USE_JPEG_COMPRESSION
+            OStreamMemRef os = OStreamMem::create();
+            
+            DataTargetRef target = DataTargetStream::createRef( os );
+            
+            writeImage( target, *surf, ImageTarget::Options(), "jpeg" );
+            
+            const void *data = os->getBuffer();
+            
+            size_t dataSize = os->tell();
+            
+            Buffer buf( dataSize );
+            memcpy(buf.getData(), data, dataSize);
+            SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );
+            queueToServer->push(jpeg->getData());
+            mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *jpeg );
+#else 
             queueToServer->push(surf->getData());
             mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *surf );
+#endif
+            
 		}
 	}
     

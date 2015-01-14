@@ -499,9 +499,9 @@ t1348079173
 s3932
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp
-c0000000054B6F4F2000000000000112B
-t1421276402
-s4395
+c0000000054B6FCC1000000000000112D
+t1421278401
+s4397
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/ConcurrentQueue.h
 c0000000054B6F57E0000000000000A77
@@ -514,8 +514,8 @@ t1421276565
 s213
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o
-t1421276570
-s3123708
+t1421278407
+s3123676
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamClient_Prefix-curjjdepvhabsgbwippmxtzcxnkj/CinderVideoStreamClient_Prefix.pch.pch
 t1421276565
@@ -530,8 +530,8 @@ t1421276565
 s1245
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient
-t1421276575
-s18388852
+t1421278412
+s18388860
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/PkgInfo
 t1421276565
@@ -7302,11 +7302,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa471a43c2d67ba41^431aa53c2d67ba41^---0#1#1#--18"Check dependencies36"856AFB6F-A131-420D-99AF-959CBB37FDE4-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese6b08f413467ba41^15ab9e413467ba41^---0#1#1#--18"Check dependencies36"F2922D87-D115-4A07-B129-E0047B169718-
 
 CCompileC Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s442969365.079071
-e442969370.109758
+s442971201.649088
+e442971207.261799
 r1
 xCompileC
 xBuild/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o
@@ -8667,12 +8667,12 @@ d/Users/vgusev/repos/Cinder/boost/boost/math/special_functions/fpclassify.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/tools/real_cast.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/container/container_fwd.hpp
 d/Users/vgusev/repos/Cinder/include/cinder/app/RendererGl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler585414152d67ba41^a0191c1a2d67ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamClient_Prefix-curjjdepvhabsgbwippmxtzcxnkj/CinderVideoStreamClient_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o36"DFDA3AC7-4555-4788-B1F6-39593CF713BC-
-bED450C37-01E6-4E2F-B418-0B4340AEAC45
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler9544a6413467ba41^960543473467ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/CinderVideoStreamClient-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamClient_Prefix-curjjdepvhabsgbwippmxtzcxnkj/CinderVideoStreamClient_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/src/CinderVideoStreamClientApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClientApp.o36"B467CEB2-3223-4FB7-BD26-43C3A309D711-
+b96358509-3629-4389-8121-5451C8477719
 
 CLd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient normal x86_64
-s442969370.120708
-e442969375.196420
+s442971207.275054
+e442971212.890854
 r1
 xLd
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient
@@ -8700,9 +8700,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
@@ -8713,6 +8710,9 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -8743,10 +8743,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
@@ -8758,18 +8754,22 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient104"Ld Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient normal x86_640ef61e1a2d67ba41^f549321f2d67ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClient.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework AVFoundation -framework Carbon -framework CoreVideo -framework CoreMedia -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClient_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient36"3D69DCED-F922-47F4-830E-2FF4018C6280-
-bED450C37-01E6-4E2F-B418-0B4340AEAC45
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient104"Ld Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient normal x86_64af7846473467ba41^dc0fe44c3467ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClient.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework AVFoundation -framework Carbon -framework CoreVideo -framework CoreMedia -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Intermediates/CinderVideoStreamClient.build/Debug/CinderVideoStreamClient.build/Objects-normal/x86_64/CinderVideoStreamClient_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/MacOS/CinderVideoStreamClient36"727B44F4-E16B-437F-9DAC-78CF24B462E5-
+b96358509-3629-4389-8121-5451C8477719
 
 CProcessInfoPlistFile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app/Contents/Info.plist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Info.plist
 s442969365.041301
@@ -8800,11 +8800,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precomp
 bED450C37-01E6-4E2F-B418-0B4340AEAC45
 
 CTouch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app
-s442969375.205538
-e442969375.210883
+s442971212.899369
+e442971212.904457
 r1
 xTouch
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app54"Touch Build/Products/Debug/CinderVideoStreamClient.app76aa341f2d67ba41^b1fc351f2d67ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamClient.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app36"EB8E648E-B1CC-4E86-BF21-6392C5D1BB0F-
-bED450C37-01E6-4E2F-B418-0B4340AEAC45
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app54"Touch Build/Products/Debug/CinderVideoStreamClient.app8448e64c3467ba41^378be74c3467ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamClient.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamClient/xcode/Build/Products/Debug/CinderVideoStreamClient.app36"8A2958DD-6D20-4B60-8641-9001313026F5-
+b96358509-3629-4389-8121-5451C8477719
 
