@@ -519,14 +519,14 @@ t1348079173
 s2498
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp
-c0000000054B6F3620000000000001929
-t1421276002
+c0000000054B6F62D0000000000001929
+t1421276717
 s6441
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/ConcurrentQueue.h
-c0000000054B6DDDB0000000000000A78
-t1421270491
-s2680
+c0000000054B6F65A0000000000000A9A
+t1421276762
+s2714
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer.LinkFileList
 c0000000054B6DE4200000000000000D5
@@ -534,15 +534,15 @@ t1421270594
 s213
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o
-t1421276007
-s3125188
+t1421276768
+s3125172
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch.pch
 t1421270594
 s123768
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-t1421276012
+t1421276774
 s102
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/Info.plist
@@ -550,8 +550,8 @@ t1421270594
 s1245
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer
-t1421276012
-s18328672
+t1421276774
+s18324568
 
 N/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/PkgInfo
 t1421270594
@@ -1967,6 +1967,51 @@ c0000000054219ABB0000000000000635
 t1411488443
 s1589
 
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/ceil.hpp
+c0000000054219ABB000000000000032B
+t1411488443
+s811
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/clock_string.hpp
+c0000000054219ABB000000000000020B
+t1411488443
+s523
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/config.hpp
+c0000000054219ABB0000000000001CFC
+t1411488443
+s7420
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/is_evenly_divisible_by.hpp
+c0000000054219ABB00000000000003C0
+t1411488443
+s960
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/static_assert.hpp
+c0000000054219ABB00000000000004B3
+t1411488443
+s1203
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/system.hpp
+c0000000054219ABB000000000000036B
+t1411488443
+s875
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/duration.hpp
+c0000000054219ABB0000000000007389
+t1411488443
+s29577
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/system_clocks.hpp
+c0000000054219ABB0000000000002221
+t1411488443
+s8737
+
+N/Users/vgusev/repos/Cinder/boost/boost/chrono/time_point.hpp
+c0000000054219ABB0000000000003309
+t1411488443
+s13065
+
 N/Users/vgusev/repos/Cinder/boost/boost/concept/assert.hpp
 c0000000054219ABC0000000000000748
 t1411488444
@@ -2066,6 +2111,11 @@ N/Users/vgusev/repos/Cinder/boost/boost/config/posix_features.hpp
 c0000000054219ABC0000000000000E98
 t1411488444
 s3736
+
+N/Users/vgusev/repos/Cinder/boost/boost/config/requires_threads.hpp
+c0000000054219ABC0000000000000DB3
+t1411488444
+s3507
 
 N/Users/vgusev/repos/Cinder/boost/boost/config/select_compiler_config.hpp
 c0000000054219ABC0000000000000E66
@@ -2177,6 +2227,11 @@ c0000000054219ABC0000000000001726
 t1411488444
 s5926
 
+N/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/conversion.hpp
+c0000000054219ABC0000000000000842
+t1411488444
+s2114
+
 N/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_calendar.hpp
 c0000000054219ABC000000000000061F
 t1411488444
@@ -2261,6 +2316,11 @@ N/Users/vgusev/repos/Cinder/boost/boost/date_time/period.hpp
 c0000000054219ABC0000000000002B28
 t1411488444
 s11048
+
+N/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/conversion.hpp
+c0000000054219ABC0000000000000C4F
+t1411488444
+s3151
 
 N/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/date_duration_operators.hpp
 c0000000054219ABC0000000000000F11
@@ -3246,6 +3306,11 @@ N/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/config/ctps.hpp
 c0000000054219ABD000000000000039E
 t1411488445
 s926
+
+N/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/config/dependent_nttp.hpp
+c0000000054219ABD00000000000004DB
+t1411488445
+s1243
 
 N/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/config/dtp.hpp
 c0000000054219ABD0000000000000689
@@ -5537,6 +5602,46 @@ c0000000054219ABF0000000000000339
 t1411488447
 s825
 
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/config.hpp
+c0000000054219ABF0000000000000B72
+t1411488447
+s2930
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/abs.hpp
+c0000000054219ABF000000000000084E
+t1411488447
+s2126
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/gcd.hpp
+c0000000054219ABF0000000000000E6C
+t1411488447
+s3692
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/lcm.hpp
+c0000000054219ABF0000000000000EC4
+t1411488447
+s3780
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/sign.hpp
+c0000000054219ABF000000000000086F
+t1411488447
+s2159
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/overflow_helpers.hpp
+c0000000054219ABF0000000000003249
+t1411488447
+s12873
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/ratio.hpp
+c0000000054219ABF0000000000001CBF
+t1411488447
+s7359
+
+N/Users/vgusev/repos/Cinder/boost/boost/ratio/ratio_fwd.hpp
+c0000000054219ABF0000000000000E9D
+t1411488447
+s3741
+
 N/Users/vgusev/repos/Cinder/boost/boost/ref.hpp
 c0000000054219ABF0000000000000F56
 t1411488447
@@ -5872,6 +5977,76 @@ c0000000054219ABF00000000000009FB
 t1411488447
 s2555
 
+N/Users/vgusev/repos/Cinder/boost/boost/thread/detail/config.hpp
+c0000000054219ABF00000000000038C9
+t1411488447
+s14537
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/detail/delete.hpp
+c0000000054219ABF000000000000067B
+t1411488447
+s1659
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/detail/move.hpp
+c0000000054219ABF0000000000001C05
+t1411488447
+s7173
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/detail/platform.hpp
+c0000000054219ABF0000000000000B04
+t1411488447
+s2820
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/exceptions.hpp
+c0000000054219ABF0000000000001808
+t1411488447
+s6152
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/lock_options.hpp
+c0000000054219ABF00000000000002BD
+t1411488447
+s701
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/lock_types.hpp
+c0000000054219ABF000000000000837D
+t1411488447
+s33661
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/lockable_traits.hpp
+c0000000054219ABF0000000000001B24
+t1411488447
+s6948
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/mutex.hpp
+c0000000054219ABF000000000000048E
+t1411488447
+s1166
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/mutex.hpp
+c0000000054219ABF000000000000262C
+t1411488447
+s9772
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp
+c0000000054219ABF0000000000000619
+t1411488447
+s1561
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/timespec.hpp
+c0000000054219ABF0000000000000DDB
+t1411488447
+s3547
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/thread_time.hpp
+c0000000054219ABF0000000000000636
+t1411488447
+s1590
+
+N/Users/vgusev/repos/Cinder/boost/boost/thread/xtime.hpp
+c0000000054219ABF0000000000000915
+t1411488447
+s2325
+
 N/Users/vgusev/repos/Cinder/boost/boost/throw_exception.hpp
 c0000000054219ABF0000000000000BF5
 t1411488447
@@ -5921,6 +6096,11 @@ N/Users/vgusev/repos/Cinder/boost/boost/type_traits/broken_compiler_spec.hpp
 c0000000054219ABF00000000000015B1
 t1411488447
 s5553
+
+N/Users/vgusev/repos/Cinder/boost/boost/type_traits/common_type.hpp
+c0000000054219ABF0000000000001579
+t1411488447
+s5497
 
 N/Users/vgusev/repos/Cinder/boost/boost/type_traits/composite_traits.hpp
 c0000000054219ABF00000000000003E9
@@ -7337,11 +7517,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies060e54f02a67ba41^d82a55f02a67ba41^---0#1#1#--18"Check dependencies36"0EFE22FE-5DC1-4D89-A85A-9EF7554E7575-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa1a349492e67ba41^4b8f4a492e67ba41^---0#1#1#--18"Check dependencies36"984608A6-4D42-4AFA-AE3B-95DFACD7EE1F-
 
 CCompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s442968802.388102
-e442968807.608812
+s442969562.810530
+e442969568.087973
 r1
 xCompileC
 xBuild/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o
@@ -8274,6 +8454,93 @@ d/Users/vgusev/repos/Cinder/include/cinder/app/RendererGl.h
 d/Users/vgusev/repos/Cinder/include/cinder/Capture.h
 d/Users/vgusev/repos/Cinder/include/cinder/Text.h
 d/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/ConcurrentQueue.h
+d/Users/vgusev/repos/Cinder/boost/boost/thread/mutex.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/detail/platform.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/config/requires_threads.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/mutex.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/detail/config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/exceptions.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/lock_types.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/detail/move.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/detail/delete.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/lock_options.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/lockable_traits.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/thread_time.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_clock.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/c_time.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/compiler_config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/locale_config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/microsec_time_clock.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/filetime_functions.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_types.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/ptime.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_system.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/config/no_tr1/cmath.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_duration.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_defs.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/special_defs.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_resolution_traits.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/int_adapter.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/gregorian_types.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/year_month_day.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/period.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_calendar.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_weekday.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/constrained_value.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_defs.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_day_of_year.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian_calendar.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian_calendar.ipp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_ymd.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_day.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_year.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_month.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_duration.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_duration.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_duration_types.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_duration_types.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_date.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/adjust_functors.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/wrapping_int.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_generators.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_clock_device.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_iterator.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_system_split.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_system_counted.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/date_duration_operators.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_duration.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/time_period.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_iterator.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/dst_rules.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/time_point.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/duration.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/static_assert.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/ratio.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/config.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/abs.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/sign.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/gcd.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/largest_int.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/config/dependent_nttp.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/mpl/lcm.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/ratio_fwd.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/ratio/detail/overflow_helpers.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/type_traits/common_type.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/type_traits/is_floating_point.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/is_evenly_divisible_by.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/xtime.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/conversion.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/conversion.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/timespec.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/system_clocks.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/detail/system.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/clock_string.hpp
+d/Users/vgusev/repos/Cinder/boost/boost/chrono/ceil.hpp
 d/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServer.h
 d/Users/vgusev/repos/Cinder/boost/boost/asio.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/async_result.hpp
@@ -8385,55 +8652,6 @@ d/Users/vgusev/repos/Cinder/boost/boost/asio/detail/timer_scheduler.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/detail/timer_scheduler_fwd.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/detail/wait_handler.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/time_traits.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_types.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_clock.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/c_time.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/compiler_config.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/locale_config.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/microsec_time_clock.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/filetime_functions.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/ptime.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_system.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_config.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/config/no_tr1/cmath.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_duration.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_defs.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/special_defs.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_resolution_traits.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/int_adapter.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/gregorian_types.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/year_month_day.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/period.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_calendar.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_weekday.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/constrained_value.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_defs.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_day_of_year.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian_calendar.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian_calendar.ipp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_ymd.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_day.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_year.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_month.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_duration.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_duration.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_duration_types.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_duration_types.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/gregorian/greg_date.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/adjust_functors.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/wrapping_int.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_generators.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_clock_device.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/date_iterator.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_system_split.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_system_counted.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/date_duration_operators.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/posix_time_duration.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/posix_time/time_period.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/time_iterator.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/date_time/dst_rules.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/detail/timer_queue_ptime.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/detail/impl/timer_queue_ptime.ipp
 d/Users/vgusev/repos/Cinder/boost/boost/asio/basic_raw_socket.hpp
@@ -8610,7 +8828,6 @@ d/Users/vgusev/repos/Cinder/boost/boost/numeric/conversion/detail/is_subranged.h
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/multiplies.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/times.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/arithmetic_op.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/largest_int.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/aux_/preprocessed/gcc/times.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/numeric/conversion/converter_policies.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/numeric/conversion/detail/converter.hpp
@@ -8630,7 +8847,6 @@ d/Users/vgusev/repos/Cinder/boost/boost/math/tools/user.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/special_functions/math_fwd.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/special_functions/detail/round_fwd.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/tools/promotion.hpp
-d/Users/vgusev/repos/Cinder/boost/boost/type_traits/is_floating_point.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/policies/policy.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/contains.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/mpl/contains_fwd.hpp
@@ -8704,12 +8920,12 @@ d/Users/vgusev/repos/Cinder/boost/boost/predef/os/bsd/net.h
 d/Users/vgusev/repos/Cinder/boost/boost/math/special_functions/fpclassify.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/math/tools/real_cast.hpp
 d/Users/vgusev/repos/Cinder/boost/boost/container/container_fwd.hpp
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler937263e22a67ba41^c2db9be72a67ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o36"90162B15-4F99-4543-91D7-388A97B29FD0-
-b5DD5BA5B-BEBF-47B3-9F14-9856C243C457
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp312"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerd1b1cfda2d67ba41^ec8516e02d67ba41^---0#0#1#-19%DVTDocumentLocation2@120"file://localhost/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp0000000000000000^3954"CompileC Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-generated-files.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-own-target-headers.hmap -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-all-target-headers.hmap -iquote /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/CinderVideoStreamServer-project-headers.hmap -iquote../../../include -iquote../include -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/include -I../../../boost -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources/x86_64 -I/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/DerivedSources -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -include /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/PrecompiledHeaders/CinderVideoStreamServer_Prefix-guoquuituvrtrjcfgauuiiaiisno/CinderVideoStreamServer_Prefix.pch -MMD -MT dependencies -MF /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.d --serialize-diagnostics /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.dia -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServerApp.cpp -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServerApp.o36"BAB4E68F-8294-4375-9D67-DC19150C540D-
+bDD27EC03-6B31-43F5-B0F5-B654620294DA
 
 CLd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64
-s442968807.622278
-e442968812.718523
+s442969568.102402
+e442969574.156842
 r1
 xLd
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer
@@ -8732,8 +8948,14 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
 d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
@@ -8744,12 +8966,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework/Versions/A/Resources/libAVFAudio.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
@@ -8780,6 +8996,10 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
@@ -8791,22 +9011,18 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer104"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64575d9fe72a67ba41^8cf3b7ec2a67ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework CoreMedia -framework Cocoa -framework OpenGL -framework Accelerate -framework AVFoundation -framework Carbon -framework CoreAudio -framework CoreVideo -framework QTKit -framework AudioToolbox -framework AudioUnit -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer36"39EB1321-D836-43C8-B471-E535005210C7-
-b5DD5BA5B-BEBF-47B3-9F14-9856C243C457
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection168"Link /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer104"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_649d461ae02d67ba41^072928e62d67ba41^---0#0#1#--1534"Ld Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer normal x86_64    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -F/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug -filelist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer.LinkFileList ../../../lib/libcinder_d.a -stdlib=libc++ -framework CoreMedia -framework Cocoa -framework OpenGL -framework Accelerate -framework AVFoundation -framework Carbon -framework CoreAudio -framework CoreVideo -framework QTKit -framework AudioToolbox -framework AudioUnit -Xlinker -dependency_info -Xlinker /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Intermediates/CinderVideoStreamServer.build/Debug/CinderVideoStreamServer.build/Objects-normal/x86_64/CinderVideoStreamServer_dependency_info.dat -o /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/MacOS/CinderVideoStreamServer36"70BBB8EA-6C05-4AB9-B9C9-EE5C746A8112-
+bDD27EC03-6B31-43F5-B0F5-B654620294DA
 
 CProcessInfoPlistFile /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app/Contents/Info.plist /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Info.plist
 s442963394.369531
@@ -8837,11 +9053,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precomp
 b24BB8198-2005-4EB5-9165-F805830CFB09
 
 CTouch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-s442968812.727948
-e442968812.733371
+s442969574.165715
+e442969574.171071
 r1
 xTouch
 x/Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app54"Touch Build/Products/Debug/CinderVideoStreamServer.app0e67baec2a67ba41^babebbec2a67ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamServer.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app36"89395A79-B47B-40D9-A141-B9547F483356-
-b5DD5BA5B-BEBF-47B3-9F14-9856C243C457
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection130"Touch /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app54"Touch Build/Products/Debug/CinderVideoStreamServer.app60772ae62d67ba41^08cc2be62d67ba41^---0#0#1#--285"Touch Build/Products/Debug/CinderVideoStreamServer.app    cd /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode    /usr/bin/touch -c /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/xcode/Build/Products/Debug/CinderVideoStreamServer.app36"D88F940D-EFE3-44A1-A88A-58F7BC2597D6-
+bDD27EC03-6B31-43F5-B0F5-B654620294DA
 

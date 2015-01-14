@@ -881,6 +881,93 @@ dependencies: \
   ../../../include/cinder/app/RendererGl.h \
   ../../../include/cinder/Capture.h ../../../include/cinder/Text.h \
   /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/ConcurrentQueue.h \
+  ../../../boost/boost/thread/mutex.hpp \
+  ../../../boost/boost/thread/detail/platform.hpp \
+  ../../../boost/boost/config/requires_threads.hpp \
+  ../../../boost/boost/thread/pthread/mutex.hpp \
+  ../../../boost/boost/thread/detail/config.hpp \
+  ../../../boost/boost/thread/exceptions.hpp \
+  ../../../boost/boost/thread/lock_types.hpp \
+  ../../../boost/boost/thread/detail/move.hpp \
+  ../../../boost/boost/thread/detail/delete.hpp \
+  ../../../boost/boost/thread/lock_options.hpp \
+  ../../../boost/boost/thread/lockable_traits.hpp \
+  ../../../boost/boost/thread/thread_time.hpp \
+  ../../../boost/boost/date_time/time_clock.hpp \
+  ../../../boost/boost/date_time/c_time.hpp \
+  ../../../boost/boost/date_time/compiler_config.hpp \
+  ../../../boost/boost/date_time/locale_config.hpp \
+  ../../../boost/boost/date_time/microsec_time_clock.hpp \
+  ../../../boost/boost/date_time/filetime_functions.hpp \
+  ../../../boost/boost/date_time/posix_time/posix_time_types.hpp \
+  ../../../boost/boost/date_time/posix_time/ptime.hpp \
+  ../../../boost/boost/date_time/posix_time/posix_time_system.hpp \
+  ../../../boost/boost/date_time/posix_time/posix_time_config.hpp \
+  ../../../boost/boost/config/no_tr1/cmath.hpp \
+  ../../../boost/boost/date_time/time_duration.hpp \
+  ../../../boost/boost/date_time/time_defs.hpp \
+  ../../../boost/boost/date_time/special_defs.hpp \
+  ../../../boost/boost/date_time/time_resolution_traits.hpp \
+  ../../../boost/boost/date_time/int_adapter.hpp \
+  ../../../boost/boost/date_time/gregorian/gregorian_types.hpp \
+  ../../../boost/boost/date_time/date.hpp \
+  ../../../boost/boost/date_time/year_month_day.hpp \
+  ../../../boost/boost/date_time/period.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_calendar.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_weekday.hpp \
+  ../../../boost/boost/date_time/constrained_value.hpp \
+  ../../../boost/boost/date_time/date_defs.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_day_of_year.hpp \
+  ../../../boost/boost/date_time/gregorian_calendar.hpp \
+  ../../../boost/boost/date_time/gregorian_calendar.ipp \
+  ../../../boost/boost/date_time/gregorian/greg_ymd.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_day.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_year.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_month.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_duration.hpp \
+  ../../../boost/boost/date_time/date_duration.hpp \
+  ../../../boost/boost/date_time/date_duration_types.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_duration_types.hpp \
+  ../../../boost/boost/date_time/gregorian/greg_date.hpp \
+  ../../../boost/boost/date_time/adjust_functors.hpp \
+  ../../../boost/boost/date_time/wrapping_int.hpp \
+  ../../../boost/boost/date_time/date_generators.hpp \
+  ../../../boost/boost/date_time/date_clock_device.hpp \
+  ../../../boost/boost/date_time/date_iterator.hpp \
+  ../../../boost/boost/date_time/time_system_split.hpp \
+  ../../../boost/boost/date_time/time_system_counted.hpp \
+  ../../../boost/boost/date_time/time.hpp \
+  ../../../boost/boost/date_time/posix_time/date_duration_operators.hpp \
+  ../../../boost/boost/date_time/posix_time/posix_time_duration.hpp \
+  ../../../boost/boost/date_time/posix_time/time_period.hpp \
+  ../../../boost/boost/date_time/time_iterator.hpp \
+  ../../../boost/boost/date_time/dst_rules.hpp \
+  ../../../boost/boost/chrono/time_point.hpp \
+  ../../../boost/boost/chrono/duration.hpp \
+  ../../../boost/boost/chrono/config.hpp \
+  ../../../boost/boost/chrono/detail/static_assert.hpp \
+  ../../../boost/boost/ratio/ratio.hpp \
+  ../../../boost/boost/ratio/config.hpp \
+  ../../../boost/boost/ratio/detail/mpl/abs.hpp \
+  ../../../boost/boost/ratio/detail/mpl/sign.hpp \
+  ../../../boost/boost/ratio/detail/mpl/gcd.hpp \
+  ../../../boost/boost/mpl/aux_/largest_int.hpp \
+  ../../../boost/boost/mpl/aux_/config/dependent_nttp.hpp \
+  ../../../boost/boost/ratio/detail/mpl/lcm.hpp \
+  ../../../boost/boost/ratio/ratio_fwd.hpp \
+  ../../../boost/boost/ratio/detail/overflow_helpers.hpp \
+  ../../../boost/boost/type_traits/common_type.hpp \
+  ../../../boost/boost/type_traits/is_floating_point.hpp \
+  ../../../boost/boost/chrono/detail/is_evenly_divisible_by.hpp \
+  ../../../boost/boost/thread/xtime.hpp \
+  ../../../boost/boost/date_time/posix_time/conversion.hpp \
+  ../../../boost/boost/date_time/gregorian/conversion.hpp \
+  ../../../boost/boost/thread/pthread/timespec.hpp \
+  ../../../boost/boost/thread/pthread/pthread_mutex_scoped_lock.hpp \
+  ../../../boost/boost/chrono/system_clocks.hpp \
+  ../../../boost/boost/chrono/detail/system.hpp \
+  ../../../boost/boost/chrono/clock_string.hpp \
+  ../../../boost/boost/chrono/ceil.hpp \
   /Users/vgusev/repos/Cinder/Cinder-VideoStream/CinderVideoStreamServer/src/CinderVideoStreamServer.h \
   ../../../boost/boost/asio.hpp \
   ../../../boost/boost/asio/async_result.hpp \
@@ -992,55 +1079,6 @@ dependencies: \
   ../../../boost/boost/asio/detail/timer_scheduler_fwd.hpp \
   ../../../boost/boost/asio/detail/wait_handler.hpp \
   ../../../boost/boost/asio/time_traits.hpp \
-  ../../../boost/boost/date_time/posix_time/posix_time_types.hpp \
-  ../../../boost/boost/date_time/time_clock.hpp \
-  ../../../boost/boost/date_time/c_time.hpp \
-  ../../../boost/boost/date_time/compiler_config.hpp \
-  ../../../boost/boost/date_time/locale_config.hpp \
-  ../../../boost/boost/date_time/microsec_time_clock.hpp \
-  ../../../boost/boost/date_time/filetime_functions.hpp \
-  ../../../boost/boost/date_time/posix_time/ptime.hpp \
-  ../../../boost/boost/date_time/posix_time/posix_time_system.hpp \
-  ../../../boost/boost/date_time/posix_time/posix_time_config.hpp \
-  ../../../boost/boost/config/no_tr1/cmath.hpp \
-  ../../../boost/boost/date_time/time_duration.hpp \
-  ../../../boost/boost/date_time/time_defs.hpp \
-  ../../../boost/boost/date_time/special_defs.hpp \
-  ../../../boost/boost/date_time/time_resolution_traits.hpp \
-  ../../../boost/boost/date_time/int_adapter.hpp \
-  ../../../boost/boost/date_time/gregorian/gregorian_types.hpp \
-  ../../../boost/boost/date_time/date.hpp \
-  ../../../boost/boost/date_time/year_month_day.hpp \
-  ../../../boost/boost/date_time/period.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_calendar.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_weekday.hpp \
-  ../../../boost/boost/date_time/constrained_value.hpp \
-  ../../../boost/boost/date_time/date_defs.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_day_of_year.hpp \
-  ../../../boost/boost/date_time/gregorian_calendar.hpp \
-  ../../../boost/boost/date_time/gregorian_calendar.ipp \
-  ../../../boost/boost/date_time/gregorian/greg_ymd.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_day.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_year.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_month.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_duration.hpp \
-  ../../../boost/boost/date_time/date_duration.hpp \
-  ../../../boost/boost/date_time/date_duration_types.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_duration_types.hpp \
-  ../../../boost/boost/date_time/gregorian/greg_date.hpp \
-  ../../../boost/boost/date_time/adjust_functors.hpp \
-  ../../../boost/boost/date_time/wrapping_int.hpp \
-  ../../../boost/boost/date_time/date_generators.hpp \
-  ../../../boost/boost/date_time/date_clock_device.hpp \
-  ../../../boost/boost/date_time/date_iterator.hpp \
-  ../../../boost/boost/date_time/time_system_split.hpp \
-  ../../../boost/boost/date_time/time_system_counted.hpp \
-  ../../../boost/boost/date_time/time.hpp \
-  ../../../boost/boost/date_time/posix_time/date_duration_operators.hpp \
-  ../../../boost/boost/date_time/posix_time/posix_time_duration.hpp \
-  ../../../boost/boost/date_time/posix_time/time_period.hpp \
-  ../../../boost/boost/date_time/time_iterator.hpp \
-  ../../../boost/boost/date_time/dst_rules.hpp \
   ../../../boost/boost/asio/detail/timer_queue_ptime.hpp \
   ../../../boost/boost/asio/detail/impl/timer_queue_ptime.ipp \
   ../../../boost/boost/asio/basic_raw_socket.hpp \
@@ -1217,7 +1255,6 @@ dependencies: \
   ../../../boost/boost/mpl/multiplies.hpp \
   ../../../boost/boost/mpl/times.hpp \
   ../../../boost/boost/mpl/aux_/arithmetic_op.hpp \
-  ../../../boost/boost/mpl/aux_/largest_int.hpp \
   ../../../boost/boost/mpl/aux_/preprocessed/gcc/times.hpp \
   ../../../boost/boost/numeric/conversion/converter_policies.hpp \
   ../../../boost/boost/numeric/conversion/detail/converter.hpp \
@@ -1237,7 +1274,6 @@ dependencies: \
   ../../../boost/boost/math/special_functions/math_fwd.hpp \
   ../../../boost/boost/math/special_functions/detail/round_fwd.hpp \
   ../../../boost/boost/math/tools/promotion.hpp \
-  ../../../boost/boost/type_traits/is_floating_point.hpp \
   ../../../boost/boost/math/policies/policy.hpp \
   ../../../boost/boost/mpl/contains.hpp \
   ../../../boost/boost/mpl/contains_fwd.hpp \

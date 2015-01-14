@@ -78,7 +78,7 @@ namespace ph {
         std::size_t size() const { return mQueue.size(); }
     private:
         std::queue<Data>		mQueue;
-        mutable std::mutex		mMutex;
+        mutable std::mutex	mMutex;
         std::condition_variable	mCondition;
     };
     

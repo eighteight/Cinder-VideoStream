@@ -27,6 +27,7 @@
 
 #include "cinder/Thread.h"
 #include <queue>
+#include <boost/thread/mutex.hpp>
 
 namespace ph {
     
@@ -54,6 +55,7 @@ namespace ph {
         bool try_pop(Data& popped_value)
         {
             std::unique_lock<std::mutex> lock(mMutex);
+
             if(mQueue.empty())
             {
                 return false;
@@ -78,7 +80,7 @@ namespace ph {
         std::size_t size() const { return mQueue.size(); }
     private:
         std::queue<Data>		mQueue;
-        mutable std::mutex		mMutex;
+        mutable std::mutex	mMutex;
         std::condition_variable	mCondition;
     };
     
