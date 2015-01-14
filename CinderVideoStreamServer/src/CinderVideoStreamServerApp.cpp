@@ -27,6 +27,7 @@
 #include "cinder/app/AppBasic.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
+#include "cinder/app/RendererGl.h"
 #include "cinder/Capture.h"
 #include "cinder/Text.h"
 #include "ConcurrentQueue.h"
@@ -52,14 +53,14 @@ class CinderVideoStreamServerApp : public AppBasic {
 	
  private:
 	vector<Capture>		mCaptures;
-	vector<gl::Texture>	mTextures;
-	vector<gl::Texture>	mNameTextures;
-	vector<Surface>		mRetainedSurfaces;
+	vector<gl::TextureRef>	mTextures;
+	vector<gl::TextureRef>	mNameTextures;
+	vector<SurfaceRef>		mRetainedSurfaces;
     void threadLoop();
     bool running;
     std::string mStatus;
 
-    std::shared_ptr<std::thread> mServerThreadRef;
+    std::shared_ptr<thread> mServerThreadRef;
 
     ph::ConcurrentQueue<uint8_t*>* queueToServer;
 };
@@ -68,7 +69,7 @@ void CinderVideoStreamServerApp::threadLoop()
 {
     while (running) {
         try {
-            boost::shared_ptr<CinderVideoStreamServerUint8> server = boost::shared_ptr<CinderVideoStreamServerUint8>(new CinderVideoStreamServerUint8(3333,queueToServer, WIDTH, HEIGHT));
+            std::shared_ptr<CinderVideoStreamServerUint8> server = std::shared_ptr<CinderVideoStreamServerUint8>(new CinderVideoStreamServerUint8(3333,queueToServer, WIDTH, HEIGHT));
             server.get()->run();
         }
         catch (std::exception& e) {
@@ -92,14 +93,14 @@ void CinderVideoStreamServerApp::setup()
 				mCaptures.back().start();
 			
 				// placeholder text
-				mTextures.push_back( gl::Texture() );
+				mTextures.push_back( gl::Texture::create(WIDTH, HEIGHT) );
 
 				// render the name as a texture
 				TextLayout layout;
 				layout.setFont( Font( "Arial", 24 ) );
 				layout.setColor( Color( 1, 1, 1 ) );
 				layout.addLine( device->getName() );
-				mNameTextures.push_back( gl::Texture( layout.render( true ) ) );
+				mNameTextures.push_back( gl::Texture::create( layout.render( true ) ) );
 			}
 			else
 				console() << "device is NOT available" << std::endl;
@@ -110,17 +111,13 @@ void CinderVideoStreamServerApp::setup()
 	}
 
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
-    mServerThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
+    mServerThreadRef = std::shared_ptr<thread>(new thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
+    mServerThreadRef->detach();
     if (!running) running = true;
 }
 
 void CinderVideoStreamServerApp::shutdown(){
     running = false;
-//    if(mServerThreadRef) {
-//        mServerThreadRef->interrupt();
-//        mServerThreadRef->join();
-//    }
-    
     if (queueToServer) delete queueToServer;
 }
 
@@ -150,9 +147,9 @@ void CinderVideoStreamServerApp::update()
 
 	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {
 		if( cIt->checkNewFrame() ) {
-			Surface8u surf = cIt->getSurface();
-            queueToServer->push(surf.getData());
-            mTextures[cIt - mCaptures.begin()] = gl::Texture( surf );
+			Surface8uRef surf = cIt->getSurface();
+            queueToServer->push(surf->getData());
+            mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *surf );
 		}
 	}
     
@@ -178,15 +175,15 @@ void CinderVideoStreamServerApp::draw()
 			
 		// draw the name
 		gl::color( Color::black() );	
-		gl::draw( mNameTextures[cIt-mCaptures.begin()], Vec2f( x + 10 + 1, y + 10 + 1 ) );
+		gl::draw( mNameTextures[cIt-mCaptures.begin()], vec2( x + 10 + 1, y + 10 + 1 ) );
 		gl::color( Color( 0.5, 0.75, 1 ) );
-		gl::draw( mNameTextures[cIt-mCaptures.begin()], Vec2f( x + 10, y + 10 ) );
+		gl::draw( mNameTextures[cIt-mCaptures.begin()], vec2( x + 10, y + 10 ) );
 
 		x += width;
 	}
     
     gl::color( Color::black() );	
-    gl::drawString(mStatus, Vec2f(10, getWindowHeight() - 10) );
+    gl::drawString(mStatus, vec2(10, getWindowHeight() - 10) );
 }
 
 

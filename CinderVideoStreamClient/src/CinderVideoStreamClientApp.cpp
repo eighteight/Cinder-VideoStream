@@ -29,6 +29,7 @@
 #include "cinder/gl/Texture.h"
 #include "ConcurrentQueue.h"
 #include "CinderVideoStreamClient.h"
+#include "cinder/app/RendererGl.h"
 #include <boost/asio.hpp>
 #include <boost/bind.hpp>
 
@@ -51,14 +52,14 @@ class CinderVideoStreamClientApp : public AppBasic {
 	
  private:
 
-	gl::Texture	mTexture;
+	gl::TextureRef	mTexture;
 
     void threadLoop();
 
     std::shared_ptr<std::thread> mClientThreadRef;
 
     uint8_t * mData;
-    Surface8u mStreamSurface;
+    SurfaceRef mStreamSurface;
 
     std::string* mClientStatus;
     std::string mStatus;
@@ -70,7 +71,7 @@ void CinderVideoStreamClientApp::threadLoop()
 {
     while (true) {
         try {
-            boost::shared_ptr<CinderVideoStreamClientUint8> s = boost::shared_ptr<CinderVideoStreamClientUint8>(new CinderVideoStreamClientUint8("localhost","3333"));
+            std::shared_ptr<CinderVideoStreamClientUint8> s = std::shared_ptr<CinderVideoStreamClientUint8>(new CinderVideoStreamClientUint8("localhost","3333"));
             s.get()->setup(queueFromServer, mClientStatus, WIDTH*HEIGHT*3);  //3 - for RGB mode
             s.get()->run();
         }
@@ -92,9 +93,9 @@ void CinderVideoStreamClientApp::setup()
     mClientStatus = new std::string();
     queueFromServer = new ph::ConcurrentQueue<uint8_t*>();
 
-    mClientThreadRef = std::shared_ptr<std::thread>(new boost::thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
-    
-    mStreamSurface = Surface8u(WIDTH, HEIGHT, WIDTH*3, SurfaceChannelOrder::RGB);
+    mClientThreadRef = std::shared_ptr<std::thread>(new thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
+    mClientThreadRef->detach();
+    mStreamSurface = Surface::create(WIDTH, HEIGHT, true, SurfaceChannelOrder::BGRA);
     mStatus.assign("Starting");
 }
 
@@ -105,17 +106,18 @@ void CinderVideoStreamClientApp::keyDown( KeyEvent event )
 }
 
 void CinderVideoStreamClientApp::shutdown(){
-//    if(mClientThreadRef) {
-//        mClientThreadRef->interrupt();
-//        mClientThreadRef->join();
-//    }
+    if(mClientThreadRef) {
+        //mClientThreadRef->interrupt();
+        //mClientThreadRef->join();
+    }
+    if (mData) delete mData;
     if (queueFromServer) delete queueFromServer;
 }
 void CinderVideoStreamClientApp::update()
 {
     if (queueFromServer->try_pop(mData)){
-        memcpy(mStreamSurface.getData(), mData, WIDTH * HEIGHT * 3);
-        mTexture = gl::Texture( mStreamSurface );
+        memcpy(mStreamSurface->getData(), mData, WIDTH * HEIGHT * 3);
+        mTexture = gl::Texture::create( *mStreamSurface );
     }
     mStatus.assign("Client: ").append(boost::lexical_cast<std::string>(getFrameRate())).append(" fps: ").append(*mClientStatus);
 }
@@ -137,7 +139,7 @@ void CinderVideoStreamClientApp::draw()
     
     // draw status
     gl::color( Color::black() );	
-    gl::drawString(mStatus, Vec2f( x + 10 + 1, y + 10 + 1 ) );
+    gl::drawString(mStatus, vec2( x + 10 + 1, y + 10 + 1 ) );
 }
 
 

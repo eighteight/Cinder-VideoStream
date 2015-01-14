@@ -1,6 +1,3 @@
-#ifndef CaptureTCPServer_ConcurrentQueue_h
-#define CaptureTCPServer_ConcurrentQueue_h
-
 /*
  Copyright (C) 2010-2012 Paul Houx
  
@@ -42,7 +39,7 @@ namespace ph {
         
         void push(Data const& data)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            std::unique_lock<std::mutex> lock(mMutex);
             mQueue.push(data);
             lock.unlock();
             mCondition.notify_one();
@@ -50,13 +47,13 @@ namespace ph {
         
         bool empty() const
         {
-            std::mutex::scoped_lock lock(mMutex);
+            std::unique_lock<std::mutex> lock(mMutex);
             return mQueue.empty();
         }
         
         bool try_pop(Data& popped_value)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            std::unique_lock<std::mutex> lock(mMutex);
             if(mQueue.empty())
             {
                 return false;
@@ -69,7 +66,7 @@ namespace ph {
         
         void wait_and_pop(Data& popped_value)
         {
-            std::mutex::scoped_lock lock(mMutex);
+            std::unique_lock<std::mutex> lock(mMutex);
             while(mQueue.empty())
             {
                 mCondition.wait(lock);
@@ -87,5 +84,3 @@ namespace ph {
     
 } // namespace ph
 
-
-#endif
