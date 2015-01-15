@@ -10,29 +10,41 @@
 	<string>CinderVideoStreamServer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F3376147-B202-4231-AFD5-64654419E7ED</key>
+		<key>AD4B458D0D225ED63FAE0155615993B7D3ECE020</key>
+		<string>git://github.com/cinder/Cinder.git</string>
+		<key>D2B7ACF2565538726519274E599946E86CF92E21</key>
 		<string>https://github.com/eighteight/Cinder-VideoStream.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CinderVideoStreamServer/xcode/CinderVideoStreamServer.xcodeproj/project.xcworkspace</string>
+	<string>CinderVideoStreamServer/xcode/CinderVideoStreamServer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F3376147-B202-4231-AFD5-64654419E7ED</key>
+		<key>AD4B458D0D225ED63FAE0155615993B7D3ECE020</key>
+		<string>../../../../..</string>
+		<key>D2B7ACF2565538726519274E599946E86CF92E21</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/eighteight/Cinder-VideoStream.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F3376147-B202-4231-AFD5-64654419E7ED</string>
+	<string>D2B7ACF2565538726519274E599946E86CF92E21</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F3376147-B202-4231-AFD5-64654419E7ED</string>
+			<string>AD4B458D0D225ED63FAE0155615993B7D3ECE020</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2B7ACF2565538726519274E599946E86CF92E21</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cinder-VideoStream</string>
 		</dict>

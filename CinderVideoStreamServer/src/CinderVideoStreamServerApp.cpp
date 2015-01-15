@@ -149,17 +149,15 @@ void CinderVideoStreamServerApp::update()
 	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {
 		if( cIt->checkNewFrame() ) {
 			Surface8uRef surf = cIt->getSurface();
+            //Surface8uRef surf = Surface::create(loadImage("/Users/eight/Desktop/Screen Shot 2014-12-17 at 12.48.19 AM.png"));
 #ifdef USE_JPEG_COMPRESSION
             OStreamMemRef os = OStreamMem::create();
-            
             DataTargetRef target = DataTargetStream::createRef( os );
-            
             writeImage( target, *surf, ImageTarget::Options(), "jpeg" );
-            
             const void *data = os->getBuffer();
-            
             size_t dataSize = os->tell();
-            
+            cout<< dataSize<<endl;
+
             Buffer buf( dataSize );
             memcpy(buf.getData(), data, dataSize);
             SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );

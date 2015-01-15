@@ -33,6 +33,8 @@
 #include <boost/asio.hpp>
 #include <boost/bind.hpp>
 
+//#define USE_JPEG_COMPRESSION
+
 using namespace ci;
 using namespace ci::app;
 using namespace std;
@@ -94,7 +96,7 @@ void CinderVideoStreamClientApp::setup()
     queueFromServer = new ph::ConcurrentQueue<uint8_t*>();
     mClientThreadRef = std::shared_ptr<std::thread>(new thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
     mClientThreadRef->detach();
-    mStreamSurface = Surface::create(WIDTH, HEIGHT, true, SurfaceChannelOrder::BGRA);
+    mStreamSurface = Surface::create(WIDTH, HEIGHT, true, SurfaceChannelOrder::RGB);
 
     mStatus.assign("Starting");
 }
@@ -112,8 +114,20 @@ void CinderVideoStreamClientApp::shutdown(){
 void CinderVideoStreamClientApp::update()
 {
     if (queueFromServer->try_pop(mData)){
+        
+#ifdef USE_JPEG_COMPRESSION
+        size_t dataSize = 607115;//WIDTH * HEIGHT * 3;//2764800
+        Buffer buf( dataSize );
+        memcpy(buf.getData(), mData, dataSize);
+        DataSourceRef dsb = DataSourceBuffer::create(buf);
+        SurfaceRef jpeg = Surface::create(loadImage( dsb, ImageSource::Options(), "jpeg"), SurfaceConstraintsDefault(), false );
+        //SurfaceRef jpeg = Surface::create(*mData, GL_RGB, WIDTH, HEIGHT);
+        mTexture = gl::Texture::create( *jpeg );
+#else
         memcpy(mStreamSurface->getData(), mData, WIDTH * HEIGHT * 3);
         mTexture = gl::Texture::create( *mStreamSurface );
+#endif
+        
     }
     mStatus.assign("Client: ").append(boost::lexical_cast<std::string>(getFrameRate())).append(" fps: ").append(*mClientStatus);
 }
