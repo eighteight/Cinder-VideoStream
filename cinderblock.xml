@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Cinder-VideoStream"
+	id="ru.scriptum.videostream"
+	git="git://github.com/eighteight/Cinder-VideoStream"
+	author="eight_io"
+	license="Apache 2.0, LGPL"
+	summary="Allows to send and receive videostream using JPG frame compression in a separate thread."
+	>
+	<supports os="macosx" />
+    
+    <copyExclude>samples</copyExclude>
+	<header>src/CinderVideoStreamClient.h</header>
+	<header>src/CinderVideoStreamServer.h</header>
+    <header>src/ConcurrentQueue.h</header>
+	<includePath>src</includePath>
+	<platform os="macosx">
+	</platform>
+</block>
+<template>templates/Basic Stream Client/template.xml</template>
+<template>templates/Basic Stream Server/template.xml</template>
+</cinder>

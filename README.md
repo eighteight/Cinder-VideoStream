@@ -1,4 +1,9 @@
 Cinder-VideoStream
 ==================
+Cinder block for double threaded video streaming and stream receiving using boost asio
 
-Examples of using Cinder for video streaming. Server and Client threaded applications using asio framework
+
+Dependencies:
+
+Cinder glNext branch
+ 
