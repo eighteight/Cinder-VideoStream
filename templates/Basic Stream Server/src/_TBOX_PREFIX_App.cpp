@@ -54,7 +54,6 @@ private:
     vector<Capture>		mCaptures;
     vector<gl::TextureRef>	mTextures;
     vector<gl::TextureRef>	mNameTextures;
-    vector<SurfaceRef>		mRetainedSurfaces;
     void threadLoop();
     bool running;
     std::string mStatus;
@@ -131,18 +130,6 @@ void _TBOX_PREFIX_App::keyDown( KeyEvent event )
         setFullScreen( ! isFullScreen() );
     else if( event.getChar() == ' ' ) {
         mCaptures.back().isCapturing() ? mCaptures.back().stop() : mCaptures.back().start();
-    }
-    else if( event.getChar() == 'r' ) {
-        // retain a random surface to exercise the surface caching code
-        int device = rand() % ( mCaptures.size() );
-        mRetainedSurfaces.push_back( mCaptures[device].getSurface() );
-        console() << mRetainedSurfaces.size() << " surfaces retained." << std::endl;
-    }
-    else if( event.getChar() == 'u' ) {
-        // unretain retained surface to exercise the Capture's surface caching code
-        if( ! mRetainedSurfaces.empty() )
-            mRetainedSurfaces.pop_back();
-        console() << mRetainedSurfaces.size() << " surfaces retained." << std::endl;
     }
 }
 

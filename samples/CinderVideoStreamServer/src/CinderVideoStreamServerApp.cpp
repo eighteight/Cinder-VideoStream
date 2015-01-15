@@ -54,7 +54,6 @@ class CinderVideoStreamServerApp : public AppBasic {
 	vector<Capture>		mCaptures;
 	vector<gl::TextureRef>	mTextures;
 	vector<gl::TextureRef>	mNameTextures;
-	vector<SurfaceRef>		mRetainedSurfaces;
     void threadLoop();
     bool running;
     std::string mStatus;
@@ -132,18 +131,6 @@ void CinderVideoStreamServerApp::keyDown( KeyEvent event )
 	else if( event.getChar() == ' ' ) {
 		mCaptures.back().isCapturing() ? mCaptures.back().stop() : mCaptures.back().start();
 	}
-	else if( event.getChar() == 'r' ) {
-		// retain a random surface to exercise the surface caching code
-		int device = rand() % ( mCaptures.size() );
-		mRetainedSurfaces.push_back( mCaptures[device].getSurface() );
-		console() << mRetainedSurfaces.size() << " surfaces retained." << std::endl;
-	}
-	else if( event.getChar() == 'u' ) {
-		// unretain retained surface to exercise the Capture's surface caching code
-		if( ! mRetainedSurfaces.empty() )
-			mRetainedSurfaces.pop_back();
-		console() << mRetainedSurfaces.size() << " surfaces retained." << std::endl;
-	}
 }
 
 void CinderVideoStreamServerApp::update()
@@ -170,9 +157,9 @@ void CinderVideoStreamServerApp::update()
                    .append(std::to_string((int)(mQuality*100.0f)))
                    .append("%) ")
                    .append(std::to_string((int)(totalStreamSize*0.001/getElapsedSeconds())))
-                   .append(" kb / sec ")
-                   .append(std::to_string(getFrameRate()))
-                   .append(" FPS ");
+                   .append(" kB/sec ")
+                   .append(std::to_string((int)getFrameRate()))
+                   .append(" fps ");
 #else
             queueToServer->push(surf->getData());
             mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *surf );
