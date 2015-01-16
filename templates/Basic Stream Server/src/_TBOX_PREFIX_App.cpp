@@ -158,7 +158,7 @@ void _TBOX_PREFIX_App::update()
             .append("%) ")
             .append(std::to_string((int)(totalStreamSize*0.001/getElapsedSeconds())))
             .append(" kb / sec ")
-            .append(std::to_string(getFrameRate()))
+            .append(std::to_string((int)getFrameRate()))
             .append(" FPS ");
 #else
             queueToServer->push(surf->getData());
