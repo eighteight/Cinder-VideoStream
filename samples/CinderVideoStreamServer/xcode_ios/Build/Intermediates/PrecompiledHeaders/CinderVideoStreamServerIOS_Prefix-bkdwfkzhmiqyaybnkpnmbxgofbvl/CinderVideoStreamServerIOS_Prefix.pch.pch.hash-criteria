@@ -1,0 +1,26 @@
+Contents of /Users/vgusev/repos/Cinder/blocks/Cinder-VideoStream/samples/CinderVideoStreamServer/xcode_ios/CinderVideoStreamServerIOS_Prefix.pch
+-x
+c++
+-arch
+armv7s
+-std=c++11
+-stdlib=libc++
+-fpascal-strings
+-O0
+-DDEBUG=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+-g
+-fvisibility-inlines-hidden
+-miphoneos-version-min=6.0
+-iquote
+-iquote
+-iquote../../../../../include
+-iquote../include
+-I/Users/vgusev/repos/Cinder/blocks/Cinder-VideoStream/samples/CinderVideoStreamServer/xcode_ios/Build/Products/Debug-iphoneos/include
+-I../../../../../boost
+-F/Users/vgusev/repos/Cinder/blocks/Cinder-VideoStream/samples/CinderVideoStreamServer/xcode_ios/Build/Products/Debug-iphoneos
+arm-apple-darwin12.5.0
+"4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)"
+SDK_PRODUCT_BUILD_VERSION=11D167
+11D167

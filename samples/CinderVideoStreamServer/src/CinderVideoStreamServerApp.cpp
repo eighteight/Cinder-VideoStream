@@ -24,7 +24,7 @@
  
  Based on CaptureAdvanced Cinder sample
  */
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/AppNative.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/app/RendererGl.h"
@@ -42,7 +42,7 @@ using namespace std;
 typedef CinderVideoStreamServer<uint8_t> CinderVideoStreamServerUint8;
 
 static const int WIDTH = 1280, HEIGHT = 720;
-class CinderVideoStreamServerApp : public AppBasic {
+class CinderVideoStreamServerApp : public AppNative {
  public:	
 	void setup();
 	void keyDown( KeyEvent event );
@@ -199,4 +199,4 @@ void CinderVideoStreamServerApp::draw()
 }
 
 
-CINDER_APP_BASIC( CinderVideoStreamServerApp, RendererGl )
+CINDER_APP_NATIVE( CinderVideoStreamServerApp, RendererGl )
