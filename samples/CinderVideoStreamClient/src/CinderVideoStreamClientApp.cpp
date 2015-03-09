@@ -119,19 +119,10 @@ void CinderVideoStreamClientApp::draw()
 {
 	gl::clear( Color::black() );
 
-
-	float width = getWindowWidth();
-	float height = width / ( WIDTH / (float)HEIGHT );
-	float x = 0, y = ( getWindowHeight() - height ) / 2.0f;
-
-	// draw the latest frame
-    gl::color( Color::white() );
 	if( mTexture)
-        gl::draw( mTexture, Rectf( x, y, x + width, y + height ) );
-    
-    // draw status
-    gl::color( Color::black() );	
-    gl::drawString(mStatus, vec2( x + 10 + 1, y + 10 + 1 ) );
+        gl::draw( mTexture, getWindowBounds() );
+
+    gl::drawString(mStatus, vec2( 10 , 10  ) );
 }
 
 

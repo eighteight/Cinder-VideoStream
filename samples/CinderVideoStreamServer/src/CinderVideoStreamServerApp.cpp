@@ -51,12 +51,11 @@ class CinderVideoStreamServerApp : public AppNative {
 	void draw();
 	
  private:
-	vector<Capture>		mCaptures;
-	vector<gl::TextureRef>	mTextures;
-	vector<gl::TextureRef>	mNameTextures;
+	CaptureRef			mCapture;
+	gl::TextureRef      mTexture;
     void threadLoop();
     bool running;
-    std::string mStatus;
+    std::string     mStatus;
     
     double totalStreamSize;
     float mQuality;
@@ -83,31 +82,12 @@ void CinderVideoStreamServerApp::setup()
 {
 	// list out the devices
     //setFrameRate(30);
-	vector<Capture::DeviceRef> devices( Capture::getDevices() );
-	for( vector<Capture::DeviceRef>::const_iterator deviceIt = devices.begin(); deviceIt != devices.end(); ++deviceIt ) {
-		Capture::DeviceRef device = *deviceIt;
-		console() << "Found Device " << device->getName() << " ID: " << device->getUniqueId() << std::endl;
-		try {
-			if( device->checkAvailable() ) {
-				mCaptures.push_back( Capture( WIDTH, HEIGHT, device ) );
-				mCaptures.back().start();
-			
-				// placeholder text
-				mTextures.push_back( gl::Texture::create(WIDTH, HEIGHT) );
-
-				// render the name as a texture
-				TextLayout layout;
-				layout.setFont( Font( "Arial", 24 ) );
-				layout.setColor( Color( 1, 1, 1 ) );
-				layout.addLine( device->getName() );
-				mNameTextures.push_back( gl::Texture::create( layout.render( true ) ) );
-			}
-			else
-				console() << "device is NOT available" << std::endl;
-		}
-		catch( CaptureExc & ) {
-			console() << "Unable to initialize device: " << device->getName() << endl;
-		}
+	try {
+		mCapture = Capture::create( WIDTH, HEIGHT );
+		mCapture->start();
+	}
+	catch( ci::Exception &exc ) {
+		console() << "Failed to initialize capture, what: " << exc.what() << std::endl;
 	}
 
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
@@ -116,7 +96,7 @@ void CinderVideoStreamServerApp::setup()
     if (!running) running = true;
     
     totalStreamSize = 0.0;
-    mQuality = 0.9f;
+    mQuality = 0.1f;
 }
 
 void CinderVideoStreamServerApp::shutdown(){
@@ -128,46 +108,41 @@ void CinderVideoStreamServerApp::keyDown( KeyEvent event )
 {
 	if( event.getChar() == 'f' )
 		setFullScreen( ! isFullScreen() );
-	else if( event.getChar() == ' ' ) {
-		mCaptures.back().isCapturing() ? mCaptures.back().stop() : mCaptures.back().start();
-	}
 }
 
 void CinderVideoStreamServerApp::update()
 {
 
-	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {
-		if( cIt->checkNewFrame() ) {
-			Surface8uRef surf = cIt->getSurface();
+    if( mCapture && mCapture->checkNewFrame() ) {
+        Surface8uRef surf = mCapture->getSurface();
 #ifdef USE_JPEG_COMPRESSION
-            OStreamMemRef os = OStreamMem::create();
-            DataTargetRef target = DataTargetStream::createRef( os );
-            writeImage( target, *surf, ImageTarget::Options().quality(mQuality), "jpeg" );
-            const void *data = os->getBuffer();
-            size_t dataSize = os->tell();
-            totalStreamSize += dataSize;
+        OStreamMemRef os = OStreamMem::create();
+        DataTargetRef target = DataTargetStream::createRef( os );
+        writeImage( target, *surf, ImageTarget::Options().quality(mQuality), "jpeg" );
+        const void *data = os->getBuffer();
+        size_t dataSize = os->tell();
+        totalStreamSize += dataSize;
 
-            Buffer buf( dataSize );
-            memcpy(buf.getData(), data, dataSize);
-            SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );
-            queueToServer->push(jpeg->getData());
-            mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *jpeg );
-            
-            mStatus.assign("Streaming JPG (")
-                   .append(std::to_string((int)(mQuality*100.0f)))
-                   .append("%) ")
-                   .append(std::to_string((int)(totalStreamSize*0.001/getElapsedSeconds())))
-                   .append(" kB/sec ")
-                   .append(std::to_string((int)getFrameRate()))
-                   .append(" fps ");
+        Buffer buf( dataSize );
+        memcpy(buf.getData(), data, dataSize);
+        SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );
+        queueToServer->push(jpeg->getData());
+        mTexture = gl::Texture::create( *jpeg );
+        
+        mStatus.assign("Streaming JPG (")
+               .append(std::to_string((int)(mQuality*100.0f)))
+               .append("%) ")
+               .append(std::to_string((int)(totalStreamSize*0.001/getElapsedSeconds())))
+               .append(" kB/sec ")
+               .append(std::to_string((int)getFrameRate()))
+               .append(" fps ");
 #else
-            queueToServer->push(surf->getData());
-            mTextures[cIt - mCaptures.begin()] = gl::Texture::create( *surf );
-            mStatus.assign("Streaming ").append(boost::lexical_cast<std::string>(getFrameRate())).append(" fps");
+        queueToServer->push(surf->getData());
+        mTexture = gl::Texture::create( *surf );
+        mStatus.assign("Streaming ").append(std::to_string((int)getFrameRate())).append(" fps");
 #endif
-            
-		}
-	}
+        
+    }
 }
 
 void CinderVideoStreamServerApp::draw()
@@ -175,25 +150,14 @@ void CinderVideoStreamServerApp::draw()
 	gl::enableAlphaBlending();
 	gl::clear( Color::black() );
 
-	if( mCaptures.empty() )
+	if( !mCapture)
 		return;
 
-	float width = getWindowWidth() / mCaptures.size();	
-	float height = width / ( WIDTH / (float)HEIGHT );
-	float x = 0, y = ( getWindowHeight() - height ) / 2.0f;
-	for( vector<Capture>::iterator cIt = mCaptures.begin(); cIt != mCaptures.end(); ++cIt ) {	
-		// draw the latest frame
-		gl::color( Color::white() );
-		if( mTextures[cIt-mCaptures.begin()] )
-			gl::draw( mTextures[cIt-mCaptures.begin()], Rectf( x, y, x + width, y + height ) );
-			
-		// draw the name
-		gl::color( Color( 0.5, 0.75, 1 ) );
-		gl::draw( mNameTextures[cIt-mCaptures.begin()], vec2( x + 10, y + 10 ) );
+    // draw the latest frame
+    gl::color( Color::white() );
+    if( mTexture )
+        gl::draw( mTexture, getWindowBounds() );
 
-		x += width;
-	}
-    
     gl::color( Color::black() );	
     gl::drawString(mStatus, vec2(10, getWindowHeight() - 10) );
 }

@@ -42,15 +42,15 @@ typedef CinderVideoStreamClient<uint8_t> CinderVideoStreamClientUint8;
 class _TBOX_PREFIX_App : public AppBasic {
 public:
     void prepareSettings( Settings *settings );
-    void setup();
-    void keyDown( KeyEvent event );
-    void update();
-    void draw();
+	void setup();
+	void keyDown( KeyEvent event );
+	void update();
+	void draw();
     void shutdown();
-    
+	
 private:
     
-    gl::TextureRef	mTexture;
+	gl::TextureRef	mTexture;
     
     void threadLoop();
     
@@ -76,13 +76,12 @@ void _TBOX_PREFIX_App::threadLoop()
         catch (std::exception& e) {
             std::cerr << "Exception: " << e.what() << "\n";
         }
-        //boost::this_thread::sleep(boost::posix_time::milliseconds(1));
     }
 }
 
 void _TBOX_PREFIX_App::prepareSettings( Settings *settings )
 {
-    settings->setTitle("CinderVideoStreamClient");
+	settings->setTitle("CinderVideoStreamClient");
 }
 
 void _TBOX_PREFIX_App::setup()
@@ -99,8 +98,8 @@ void _TBOX_PREFIX_App::setup()
 
 void _TBOX_PREFIX_App::keyDown( KeyEvent event )
 {
-    if( event.getChar() == 'f' )
-        setFullScreen( ! isFullScreen() );
+	if( event.getChar() == 'f' )
+		setFullScreen( ! isFullScreen() );
 }
 
 void _TBOX_PREFIX_App::shutdown(){
@@ -113,27 +112,17 @@ void _TBOX_PREFIX_App::update()
         memcpy(mStreamSurface->getData(), mData, WIDTH * HEIGHT * 3);
         mTexture = gl::Texture::create( *mStreamSurface );
     }
-    mStatus.assign("Client: ").append(boost::lexical_cast<std::string>(getFrameRate())).append(" fps: ").append(*mClientStatus);
+    mStatus.assign("Client: ").append(std::to_string((int)getFrameRate())).append(" fps: ").append(*mClientStatus);
 }
 
 void _TBOX_PREFIX_App::draw()
 {
-    //	gl::enableAlphaBlending();
-    gl::clear( Color::black() );
+	gl::clear( Color::black() );
     
+	if( mTexture)
+        gl::draw( mTexture, getWindowBounds() );
     
-    float width = getWindowWidth();
-    float height = width / ( WIDTH / (float)HEIGHT );
-    float x = 0, y = ( getWindowHeight() - height ) / 2.0f;
-    
-    // draw the latest frame
-    gl::color( Color::white() );
-    if( mTexture)
-        gl::draw( mTexture, Rectf( x, y, x + width, y + height ) );
-    
-    // draw status
-    gl::color( Color::black() );
-    gl::drawString(mStatus, vec2( x + 10 + 1, y + 10 + 1 ) );
+    gl::drawString(mStatus, vec2( 10 , 10  ) );
 }
 
 
