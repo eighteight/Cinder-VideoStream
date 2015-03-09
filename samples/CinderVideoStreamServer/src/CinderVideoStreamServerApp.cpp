@@ -1,5 +1,5 @@
 /*
- CinderVideoStreamClientApp.cpp
+CinderVideoStreamServerApp.cpp
  
  Created by Vladimir Gusev on 01/15/15.
  Copyright (c) 2015 onewaytheater.us
