@@ -14,6 +14,7 @@
 # Xcode
 #
 Build/
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -25,7 +26,7 @@ Build/
 xcuserdata
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedData/
 *.hmap
 *.ipa
 *.xcuserstate
@@ -39,4 +40,4 @@ samples/CinderVideoStreamServer/xcode_ios/build/
 samples/CinderVideoStreamServer/xcode/build/
 samples/CinderVideoStreamClient/xcode/build/
 
-node_modules
+node_modules/
