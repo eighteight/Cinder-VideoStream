@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<cinder>
-<template name="VideoStream: Basic Client" parent="org.libcinder.apptemplates.basicopengl">
-	<requires>ru.scriptum.videostream</requires>
-	<source replaceContents="true" replaceName="true">src/_TBOX_PREFIX_App.cpp</source>
-</template>
-</cinder>
