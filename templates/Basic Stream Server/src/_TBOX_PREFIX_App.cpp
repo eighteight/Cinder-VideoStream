@@ -1,5 +1,5 @@
 /*
- CinderVideoStreamClientApp.cpp
+ _TBOX_PREFIX_App.cpp
  
  Created by Vladimir Gusev on 01/15/15.
  Copyright (c) 2015 onewaytheater.us
@@ -25,36 +25,11 @@
  Based on CaptureAdvanced Cinder sample
  */
 
-/*
- CinderVideoStreamClientApp.cpp
- 
- Created by Vladimir Gusev on 01/15/15.
- Copyright (c) 2015 onewaytheater.us
- 
- Permission is hereby granted, free of charge, to any person obtaining a copy of
- this software and associated documentation files (the "Software"), to deal in
- the Software without restriction, including without limitation the rights to
- use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
- of the Software, and to permit persons to whom the Software is furnished to do
- so, subject to the following conditions:
- 
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE.
- 
- Based on CaptureAdvanced Cinder sample
- */
-#include "cinder/app/AppNative.h"
+#include "cinder/app/App.h"
+#include "cinder/app/RendererGl.h"
+#include "cinder/gl/gl.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
-#include "cinder/app/RendererGl.h"
 #include "cinder/Capture.h"
 #include "cinder/Text.h"
 #include "ConcurrentQueue.h"
@@ -69,17 +44,17 @@ using namespace std;
 typedef CinderVideoStreamServer<uint8_t> CinderVideoStreamServerUint8;
 
 static const int WIDTH = 1280, HEIGHT = 720;
-class _TBOX_PREFIX_App : public AppNative {
+class _TBOX_PREFIX_App : public App {
 public:
-	void setup();
-	void keyDown( KeyEvent event );
+    void setup();
+    void keyDown( KeyEvent event );
     void shutdown();
-	void update();
-	void draw();
-	
+    void update();
+    void draw();
+    
 private:
-	CaptureRef			mCapture;
-	gl::TextureRef      mTexture;
+    CaptureRef			mCapture;
+    gl::TextureRef      mTexture;
     void threadLoop();
     bool running;
     std::string     mStatus;
@@ -107,15 +82,15 @@ void _TBOX_PREFIX_App::threadLoop()
 
 void _TBOX_PREFIX_App::setup()
 {
-	// list out the devices
+    // list out the devices
     //setFrameRate(30);
-	try {
-		mCapture = Capture::create( WIDTH, HEIGHT );
-		mCapture->start();
-	}
-	catch( ci::Exception &exc ) {
-		console() << "Failed to initialize capture, what: " << exc.what() << std::endl;
-	}
+    try {
+        mCapture = Capture::create( WIDTH, HEIGHT );
+        mCapture->start();
+    }
+    catch( ci::Exception &exc ) {
+        console() << "Failed to initialize capture, what: " << exc.what() << std::endl;
+    }
     
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
     mServerThreadRef = std::shared_ptr<thread>(new thread(boost::bind(&_TBOX_PREFIX_App::threadLoop, this)));
@@ -133,8 +108,8 @@ void _TBOX_PREFIX_App::shutdown(){
 
 void _TBOX_PREFIX_App::keyDown( KeyEvent event )
 {
-	if( event.getChar() == 'f' )
-		setFullScreen( ! isFullScreen() );
+    if( event.getChar() == 'f' )
+        setFullScreen( ! isFullScreen() );
 }
 
 void _TBOX_PREFIX_App::update()
@@ -150,9 +125,9 @@ void _TBOX_PREFIX_App::update()
         size_t dataSize = os->tell();
         totalStreamSize += dataSize;
         
-        Buffer buf( dataSize );
-        memcpy(buf.getData(), data, dataSize);
-        SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );
+        BufferRef bufRef = Buffer::create(dataSize);
+        memcpy(bufRef->getData(), data, dataSize);
+        SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(bufRef)), SurfaceConstraintsDefault(), false );
         queueToServer->push(jpeg->getData());
         mTexture = gl::Texture::create( *jpeg );
         
@@ -174,20 +149,26 @@ void _TBOX_PREFIX_App::update()
 
 void _TBOX_PREFIX_App::draw()
 {
-	gl::enableAlphaBlending();
-	gl::clear( Color::black() );
+    gl::clear();
     
-	if( !mCapture)
-		return;
+    if( mTexture ) {
+        gl::ScopedModelMatrix modelScope;
+        
+#if defined( CINDER_COCOA_TOUCH )
+        // change iphone to landscape orientation
+        gl::rotate( M_PI / 2 );
+        gl::translate( 0, - getWindowWidth() );
+        
+        Rectf flippedBounds( 0, 0, getWindowHeight(), getWindowWidth() );
+        gl::draw( mTexture, flippedBounds );
+#else
+        gl::draw( mTexture,getWindowBounds() );
+        
+#endif
+    }
     
-    // draw the latest frame
-    gl::color( Color::white() );
-    if( mTexture )
-        gl::draw( mTexture, getWindowBounds() );
-    
-    gl::color( Color::black() );
     gl::drawString(mStatus, vec2(10, getWindowHeight() - 10) );
+    
 }
 
-
-CINDER_APP_NATIVE( _TBOX_PREFIX_App, RendererGl )
+CINDER_APP( _TBOX_PREFIX_App, RendererGl )

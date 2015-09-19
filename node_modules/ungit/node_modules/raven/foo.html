@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title></title>
+</head>
+<script>
+var re = /function\s*(.*?)\((.*?)\)/;
+
+function step1(a, b) {
+    step2(a, b);
+}
+
+function step2(a, b) {
+    step3(a + 1, b + 1, 10);
+}
+
+function step3(a, b, c) {
+    captureStack();
+}
+
+step1(1, 2);
+
+
+function captureStack() {
+    var c = arguments.callee;
+    var output = [];
+    while (c = c.caller) {
+        var fn = ('' + c).match(re);
+        var name = fn[1] || '<anonymous>';
+        var args = fn[2].split(',');
+        output.push(name + ':');
+        for (var i = 0; i < args.length; i++) {
+            output.push('  ' + args[i].replace(/^\s+|\s+$/, '') + '=' + c.arguments[i]);
+        }
+    }
+    console.log(output.join('\n'));
+}
+</script>
+<body>
+
+</body>
+</html>

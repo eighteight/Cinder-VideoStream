@@ -24,7 +24,8 @@
 
  */
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/App.h"
+#include "cinder/gl/gl.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
 #include "ConcurrentQueue.h"
@@ -39,7 +40,7 @@ static const int WIDTH = 1280, HEIGHT = 720;
 
 typedef CinderVideoStreamClient<uint8_t> CinderVideoStreamClientUint8;
 
-class CinderVideoStreamClientApp : public AppBasic {
+class CinderVideoStreamClientApp : public App {
  public:
     void prepareSettings( Settings *settings );
 	void setup();
@@ -126,4 +127,4 @@ void CinderVideoStreamClientApp::draw()
 }
 
 
-CINDER_APP_BASIC( CinderVideoStreamClientApp, RendererGl )
+CINDER_APP( CinderVideoStreamClientApp, RendererGl )

@@ -24,7 +24,8 @@
  
  */
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/App.h"
+#include "cinder/gl/gl.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
 #include "ConcurrentQueue.h"
@@ -39,18 +40,18 @@ static const int WIDTH = 1280, HEIGHT = 720;
 
 typedef CinderVideoStreamClient<uint8_t> CinderVideoStreamClientUint8;
 
-class _TBOX_PREFIX_App : public AppBasic {
+class _TBOX_PREFIX_App : public App {
 public:
     void prepareSettings( Settings *settings );
-	void setup();
-	void keyDown( KeyEvent event );
-	void update();
-	void draw();
+    void setup();
+    void keyDown( KeyEvent event );
+    void update();
+    void draw();
     void shutdown();
-	
+    
 private:
     
-	gl::TextureRef	mTexture;
+    gl::TextureRef	mTexture;
     
     void threadLoop();
     
@@ -81,7 +82,7 @@ void _TBOX_PREFIX_App::threadLoop()
 
 void _TBOX_PREFIX_App::prepareSettings( Settings *settings )
 {
-	settings->setTitle("CinderVideoStreamClient");
+    settings->setTitle("CinderVideoStreamClient");
 }
 
 void _TBOX_PREFIX_App::setup()
@@ -98,8 +99,8 @@ void _TBOX_PREFIX_App::setup()
 
 void _TBOX_PREFIX_App::keyDown( KeyEvent event )
 {
-	if( event.getChar() == 'f' )
-		setFullScreen( ! isFullScreen() );
+    if( event.getChar() == 'f' )
+        setFullScreen( ! isFullScreen() );
 }
 
 void _TBOX_PREFIX_App::shutdown(){
@@ -117,13 +118,13 @@ void _TBOX_PREFIX_App::update()
 
 void _TBOX_PREFIX_App::draw()
 {
-	gl::clear( Color::black() );
+    gl::clear( Color::black() );
     
-	if( mTexture)
+    if( mTexture)
         gl::draw( mTexture, getWindowBounds() );
     
     gl::drawString(mStatus, vec2( 10 , 10  ) );
 }
 
 
-CINDER_APP_BASIC( _TBOX_PREFIX_App, RendererGl )
+CINDER_APP( _TBOX_PREFIX_App, RendererGl )

@@ -24,10 +24,12 @@ CinderVideoStreamServerApp.cpp
  
  Based on CaptureAdvanced Cinder sample
  */
-#include "cinder/app/AppNative.h"
+
+#include "cinder/app/App.h"
+#include "cinder/app/RendererGl.h"
+#include "cinder/gl/gl.h"
 #include "cinder/Surface.h"
 #include "cinder/gl/Texture.h"
-#include "cinder/app/RendererGl.h"
 #include "cinder/Capture.h"
 #include "cinder/Text.h"
 #include "ConcurrentQueue.h"
@@ -42,7 +44,7 @@ using namespace std;
 typedef CinderVideoStreamServer<uint8_t> CinderVideoStreamServerUint8;
 
 static const int WIDTH = 1280, HEIGHT = 720;
-class CinderVideoStreamServerApp : public AppNative {
+class CinderVideoStreamServerApp : public App {
  public:	
 	void setup();
 	void keyDown( KeyEvent event );
@@ -123,9 +125,9 @@ void CinderVideoStreamServerApp::update()
         size_t dataSize = os->tell();
         totalStreamSize += dataSize;
 
-        Buffer buf( dataSize );
-        memcpy(buf.getData(), data, dataSize);
-        SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(buf)), SurfaceConstraintsDefault(), false );
+        BufferRef bufRef = Buffer::create(dataSize);
+        memcpy(bufRef->getData(), data, dataSize);
+        SurfaceRef jpeg = Surface::create(loadImage( DataSourceBuffer::create(bufRef)), SurfaceConstraintsDefault(), false );
         queueToServer->push(jpeg->getData());
         mTexture = gl::Texture::create( *jpeg );
         
@@ -147,20 +149,26 @@ void CinderVideoStreamServerApp::update()
 
 void CinderVideoStreamServerApp::draw()
 {
-	gl::enableAlphaBlending();
-	gl::clear( Color::black() );
-
-	if( !mCapture)
-		return;
-
-    // draw the latest frame
-    gl::color( Color::white() );
-    if( mTexture )
-        gl::draw( mTexture, getWindowBounds() );
-
-    gl::color( Color::black() );	
+    gl::clear();
+    
+    if( mTexture ) {
+        gl::ScopedModelMatrix modelScope;
+        
+#if defined( CINDER_COCOA_TOUCH )
+        // change iphone to landscape orientation
+        gl::rotate( M_PI / 2 );
+        gl::translate( 0, - getWindowWidth() );
+        
+        Rectf flippedBounds( 0, 0, getWindowHeight(), getWindowWidth() );
+        gl::draw( mTexture, flippedBounds );
+#else
+        gl::draw( mTexture,getWindowBounds() );
+        
+#endif
+    }
+    
     gl::drawString(mStatus, vec2(10, getWindowHeight() - 10) );
+
 }
 
-
-CINDER_APP_NATIVE( CinderVideoStreamServerApp, RendererGl )
+CINDER_APP( CinderVideoStreamServerApp, RendererGl )

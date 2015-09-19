@@ -13,12 +13,14 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		AF6B8C841A68693F0090116A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C7F1A68693F0090116A /* Accelerate.framework */; };
-		AF6B8C851A68693F0090116A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C801A68693F0090116A /* AudioToolbox.framework */; };
-		AF6B8C861A68693F0090116A /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C811A68693F0090116A /* AudioUnit.framework */; };
-		AF6B8C871A68693F0090116A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C821A68693F0090116A /* CoreAudio.framework */; };
-		AF6B8C881A68693F0090116A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C831A68693F0090116A /* CoreMedia.framework */; };
-		AF6B8C8A1A6869C20090116A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C891A6869C20090116A /* AVFoundation.framework */; };
+		AF985F461BAE0ABF00106F2D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F451BAE0ABF00106F2D /* AVFoundation.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F481BAE0AE900106F2D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F471BAE0AE900106F2D /* CoreMedia.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F4A1BAE0BB600106F2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F491BAE0BB600106F2D /* IOKit.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F4C1BAE0BDA00106F2D /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4B1BAE0BDA00106F2D /* IOSurface.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F4E1BAE0C3F00106F2D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4D1BAE0C3F00106F2D /* CoreAudio.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F501BAE0C6400106F2D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4F1BAE0C6400106F2D /* AudioToolbox.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F521BAE0C7700106F2D /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F511BAE0C7700106F2D /* AudioUnit.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F541BAE0CC500106F2D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F531BAE0CC500106F2D /* Accelerate.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +39,14 @@
 		AF6B8B1A1A68669E0090116A /* CinderVideoStreamClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderVideoStreamClient.h; sourceTree = "<group>"; };
 		AF6B8B1B1A68669E0090116A /* CinderVideoStreamServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderVideoStreamServer.h; sourceTree = "<group>"; };
 		AF6B8B1C1A68669E0090116A /* ConcurrentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcurrentQueue.h; sourceTree = "<group>"; };
-		AF6B8C7F1A68693F0090116A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		AF6B8C801A68693F0090116A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
-		AF6B8C811A68693F0090116A /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
-		AF6B8C821A68693F0090116A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
-		AF6B8C831A68693F0090116A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		AF6B8C891A6869C20090116A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F451BAE0ABF00106F2D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F471BAE0AE900106F2D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F491BAE0BB600106F2D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F4B1BAE0BDA00106F2D /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/IOSurface.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F4D1BAE0C3F00106F2D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F4F1BAE0C6400106F2D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F511BAE0C7700106F2D /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = DEVELOPER_DIR; };
+		AF985F531BAE0CC500106F2D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +54,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF985F481BAE0AE900106F2D /* CoreMedia.framework in Frameworks */,
+				AF985F541BAE0CC500106F2D /* Accelerate.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
-				AF6B8C8A1A6869C20090116A /* AVFoundation.framework in Frameworks */,
-				AF6B8C871A68693F0090116A /* CoreAudio.framework in Frameworks */,
-				AF6B8C851A68693F0090116A /* AudioToolbox.framework in Frameworks */,
+				AF985F501BAE0C6400106F2D /* AudioToolbox.framework in Frameworks */,
 				53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */,
-				AF6B8C881A68693F0090116A /* CoreMedia.framework in Frameworks */,
+				AF985F521BAE0C7700106F2D /* AudioUnit.framework in Frameworks */,
 				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				AF985F461BAE0ABF00106F2D /* AVFoundation.framework in Frameworks */,
+				AF985F4C1BAE0BDA00106F2D /* IOSurface.framework in Frameworks */,
 				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
-				AF6B8C841A68693F0090116A /* Accelerate.framework in Frameworks */,
-				AF6B8C861A68693F0090116A /* AudioUnit.framework in Frameworks */,
+				AF985F4E1BAE0C3F00106F2D /* CoreAudio.framework in Frameworks */,
+				AF985F4A1BAE0BB600106F2D /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +84,14 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF6B8C891A6869C20090116A /* AVFoundation.framework */,
-				AF6B8C7F1A68693F0090116A /* Accelerate.framework */,
-				AF6B8C801A68693F0090116A /* AudioToolbox.framework */,
-				AF6B8C811A68693F0090116A /* AudioUnit.framework */,
-				AF6B8C821A68693F0090116A /* CoreAudio.framework */,
-				AF6B8C831A68693F0090116A /* CoreMedia.framework */,
+				AF985F531BAE0CC500106F2D /* Accelerate.framework */,
+				AF985F511BAE0C7700106F2D /* AudioUnit.framework */,
+				AF985F4F1BAE0C6400106F2D /* AudioToolbox.framework */,
+				AF985F4D1BAE0C3F00106F2D /* CoreAudio.framework */,
+				AF985F4B1BAE0BDA00106F2D /* IOSurface.framework */,
+				AF985F491BAE0BB600106F2D /* IOKit.framework */,
+				AF985F471BAE0AE900106F2D /* CoreMedia.framework */,
+				AF985F451BAE0ABF00106F2D /* AVFoundation.framework */,
 				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
 				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
 				53E3CDFB0E86099300238D2B /* Carbon.framework */,
@@ -307,7 +315,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
@@ -326,7 +334,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
+				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "$(CINDER_PATH)/include ../include";
