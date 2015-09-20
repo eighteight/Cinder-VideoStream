@@ -71,7 +71,7 @@ void CinderVideoStreamServerApp::threadLoop()
 {
     while (running) {
         try {
-            std::shared_ptr<CinderVideoStreamServerUint8> server = std::shared_ptr<CinderVideoStreamServerUint8>(new CinderVideoStreamServerUint8(3333,queueToServer, WIDTH, HEIGHT));
+            std::shared_ptr<CinderVideoStreamServerUint8> server = std::shared_ptr<CinderVideoStreamServerUint8>(new CinderVideoStreamServerUint8(3333,queueToServer, 3*sizeof(uint8_t)* WIDTH * HEIGHT));
             server.get()->run();
         }
         catch (std::exception& e) {

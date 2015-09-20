@@ -35,8 +35,8 @@ template <class T>
 class CinderVideoStreamServer{
     public:
 
-    CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, unsigned int width, unsigned int height)
-                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(width*height*3*sizeof(T)){
+    CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, size_t size)
+                                :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(size){
                                     boost::asio::socket_base::reuse_address option(true);
                                     mAcceptor.set_option(option);
                                 }
