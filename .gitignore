@@ -36,7 +36,7 @@ DerivedData/
 xcshareddata/
 xcuserdata/
 
-samples/CinderVideoStreamServer/xcode_ios/build/
+samples/CinderVideoStreamServer/xcode_ios/Build/
 samples/CinderVideoStreamServer/xcode/build/
 samples/CinderVideoStreamClient/xcode/build/
 
