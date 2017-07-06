@@ -26,11 +26,13 @@
 
 #ifndef CaptureTCPServer_TCPServer_h
 #define CaptureTCPServer_TCPServer_h
-#include <boost/asio.hpp>
-#include <boost/bind.hpp>
-#include <boost/lexical_cast.hpp>
+#include "asio/asio.hpp"
+#include <functional>
+#include <array>
+//#include <boost/lexical_cast.hpp>
 
-using namespace boost::asio::ip;
+
+using namespace asio::ip;
 
 template <class T>
 class CinderVideoStreamClient{
@@ -50,7 +52,10 @@ class CinderVideoStreamClient{
     }
     void run(){
         tcp::resolver resolver(mIOService);
-        boost::array<T, 65536> temp_buffer;
+//        boost::array<T, 65536> temp_buffer;
+        std::array<T, 65536> temp_buffer;
+        
+        
         size_t len, iSize;
         tcp::resolver::query query(tcp::v4(), mHost, mService);
         while(true){
@@ -60,7 +65,7 @@ class CinderVideoStreamClient{
                 tcp::resolver::iterator end;
                 
                 tcp::socket socket(mIOService);
-                boost::system::error_code error = boost::asio::error::host_not_found;
+                asio::error_code error = asio::error::host_unreachable;
                 
                 while (error && endpoint_iterator != end)
                 {
@@ -68,12 +73,13 @@ class CinderVideoStreamClient{
                     socket.connect(*endpoint_iterator++, error);
                 }
                 if (error)
-                    throw boost::system::system_error(error);
+                    throw asio::system_error(error);
 
                 iSize = 0;
                 for (;;)
                 {
-                    len = socket.read_some(boost::asio::buffer(temp_buffer), error)/sizeof(T);
+                    
+                    len = socket.read_some(asio::buffer(temp_buffer, temp_buffer.size()), error)/sizeof(T);
 
                     //memcpy(mData, &temp_buffer[0], temp_buffer.size());
                     //copy( temp_buffer.begin(), temp_buffer.begin(), mData);
@@ -83,10 +89,10 @@ class CinderVideoStreamClient{
 
                     iSize += len;
                     
-                    if (error == boost::asio::error::eof)
+                    if (error == asio::error::misc_errors::eof )
                         break; // Connection closed cleanly by peer.
                     else if (error)
-                        throw boost::system::system_error(error); // Some other error.
+                        throw asio::system_error(error); // Some other error.
                 }
                 mQueue->push(mData);
                 (*mStatus).assign("Capturing");
@@ -98,7 +104,9 @@ class CinderVideoStreamClient{
         }
     }
 private:
-    boost::asio::io_service mIOService;
+//    boost::asio::io_service mIOService;
+    asio::io_service mIOService;
+    
     ph::ConcurrentQueue<T*>* mQueue;
     std::string mService;
     std::string mHost;
