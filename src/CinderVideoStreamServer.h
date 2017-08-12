@@ -26,18 +26,19 @@
 
 #ifndef CinderVideoStreamServer_CinderVideoStreamServer_h
 #define CinderVideoStreamServer_CinderVideoStreamServer_h
-#include <boost/asio.hpp>
-#include <boost/bind.hpp>
+#include "asio/asio.hpp"
+//#include <boost/bind.hpp>
+#include <functional>
 
 
-using namespace boost::asio;
+using namespace asio;
 template <class T>
 class CinderVideoStreamServer{
     public:
 
     CinderVideoStreamServer(unsigned short port, ph::ConcurrentQueue<uint8_t*>* queueToServer, size_t size)
                                 :mSocket(mIOService),mAcceptor(mIOService,ip::tcp::endpoint(ip::tcp::v4(), port)),mQueue(queueToServer), dSize(size){
-                                    boost::asio::socket_base::reuse_address option(true);
+                                    asio::socket_base::reuse_address option(true);
                                     mAcceptor.set_option(option);
                                 }
     void run(){
@@ -49,7 +50,11 @@ class CinderVideoStreamServer{
             if (mQueue->try_pop(data)){
                 const mutable_buffer image_buffer(data, dSize);
                 mAcceptor.accept(mSocket);
-                boost::asio::write(mSocket, buffer(image_buffer), transfer_all(), ignored_error);
+//                asio::write(mSocket, buffer(image_buffer), transfer_all(), ignored_error);
+                
+                asio::error_code e;
+                asio::write(mSocket, buffer(data, dSize), e);
+                
                 mSocket.close();
             }
         }

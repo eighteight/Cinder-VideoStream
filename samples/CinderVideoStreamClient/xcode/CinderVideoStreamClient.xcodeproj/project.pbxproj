@@ -19,8 +19,8 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		AF6B8C7C1A6868D70090116A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C7B1A6868D70090116A /* AVFoundation.framework */; };
 		AF6B8C7E1A6868EC0090116A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B8C7D1A6868EC0090116A /* CoreMedia.framework */; };
-		AF985F561BAE0EEA00106F2D /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F551BAE0EEA00106F2D /* IOSurface.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F581BAE0F0700106F2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F571BAE0F0700106F2D /* IOKit.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F561BAE0EEA00106F2D /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F551BAE0EEA00106F2D /* IOSurface.framework */; };
+		AF985F581BAE0F0700106F2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F571BAE0F0700106F2D /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -268,7 +268,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/macosx/Debug/libcinder.a";
 				PRODUCT_NAME = CinderVideoStreamClient;
 				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
@@ -294,7 +294,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = "";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/macosx/Release/libcinder.a";
 				PRODUCT_NAME = CinderVideoStreamClient;
 				STRIP_INSTALLED_PRODUCT = YES;
 				VALID_ARCHS = x86_64;

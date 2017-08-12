@@ -62,7 +62,7 @@ class CinderVideoStreamServerApp : public App {
     double totalStreamSize;
     float mQuality;
 
-    std::shared_ptr<thread> mServerThreadRef;
+    std::shared_ptr<std::thread> mServerThreadRef;
 
     ph::ConcurrentQueue<uint8_t*>* queueToServer;
 };
@@ -93,7 +93,7 @@ void CinderVideoStreamServerApp::setup()
 	}
 
     queueToServer = new ph::ConcurrentQueue<uint8_t*>();
-    mServerThreadRef = std::shared_ptr<thread>(new thread(boost::bind(&CinderVideoStreamServerApp::threadLoop, this)));
+    mServerThreadRef = std::shared_ptr<std::thread>(new std::thread(std::bind(&CinderVideoStreamServerApp::threadLoop, this)));
     mServerThreadRef->detach();
     if (!running) running = true;
     

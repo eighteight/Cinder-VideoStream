@@ -13,14 +13,14 @@
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		AF985F461BAE0ABF00106F2D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F451BAE0ABF00106F2D /* AVFoundation.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F481BAE0AE900106F2D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F471BAE0AE900106F2D /* CoreMedia.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F4A1BAE0BB600106F2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F491BAE0BB600106F2D /* IOKit.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F4C1BAE0BDA00106F2D /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4B1BAE0BDA00106F2D /* IOSurface.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F4E1BAE0C3F00106F2D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4D1BAE0C3F00106F2D /* CoreAudio.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F501BAE0C6400106F2D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4F1BAE0C6400106F2D /* AudioToolbox.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F521BAE0C7700106F2D /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F511BAE0C7700106F2D /* AudioUnit.framework */; settings = {ASSET_TAGS = (); }; };
-		AF985F541BAE0CC500106F2D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F531BAE0CC500106F2D /* Accelerate.framework */; settings = {ASSET_TAGS = (); }; };
+		AF985F461BAE0ABF00106F2D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F451BAE0ABF00106F2D /* AVFoundation.framework */; };
+		AF985F481BAE0AE900106F2D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F471BAE0AE900106F2D /* CoreMedia.framework */; };
+		AF985F4A1BAE0BB600106F2D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F491BAE0BB600106F2D /* IOKit.framework */; };
+		AF985F4C1BAE0BDA00106F2D /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4B1BAE0BDA00106F2D /* IOSurface.framework */; };
+		AF985F4E1BAE0C3F00106F2D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4D1BAE0C3F00106F2D /* CoreAudio.framework */; };
+		AF985F501BAE0C6400106F2D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F4F1BAE0C6400106F2D /* AudioToolbox.framework */; };
+		AF985F521BAE0C7700106F2D /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F511BAE0C7700106F2D /* AudioUnit.framework */; };
+		AF985F541BAE0CC500106F2D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF985F531BAE0CC500106F2D /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -268,7 +268,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/macosx/Debug/libcinder.a";
 				PRODUCT_NAME = CinderVideoStreamServer;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
@@ -295,7 +295,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
+				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/macosx/Release/libcinder.a";
 				PRODUCT_NAME = CinderVideoStreamServer;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = YES;

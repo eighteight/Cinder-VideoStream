@@ -90,7 +90,7 @@ void CinderVideoStreamClientApp::setup()
     //setFrameRate(30);
     mClientStatus = new std::string();
     queueFromServer = new ph::ConcurrentQueue<uint8_t*>();
-    mClientThreadRef = std::shared_ptr<std::thread>(new thread(boost::bind(&CinderVideoStreamClientApp::threadLoop, this)));
+    mClientThreadRef = std::shared_ptr<std::thread>(new thread(std::bind(&CinderVideoStreamClientApp::threadLoop, this)));
     mClientThreadRef->detach();
     mStreamSurface = Surface::create(WIDTH, HEIGHT, false, SurfaceChannelOrder::RGB);
 
